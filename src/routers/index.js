@@ -1,0 +1,18 @@
+import React, { Fragment } from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
+
+import LayoutRoute from "./LayoutRoute";
+import NotFound from "../components/error/NotFound";
+import MainLayout from "../components/common/layout/MainLayout";
+import FrontPage from "../layouts/FrontPage";
+
+const Router = () => (
+    <BrowserRouter>
+        <Switch>
+            <LayoutRoute  exact path="/" layout={MainLayout} component={FrontPage} />
+        </Switch>
+    </BrowserRouter>
+);
+
+export default Router;

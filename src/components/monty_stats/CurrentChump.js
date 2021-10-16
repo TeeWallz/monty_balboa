@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-// import {bindActionCreators} from 'redux'
-// import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
@@ -9,36 +7,32 @@ import commonStyle from "../../styles/common";
 
 
 const styles = theme => ({
-    header: {
-        backgroundColor: '#fff5ee',
-        // height: '50px',
-    },
-    header_image:{
-        width: '100%',
-    },
-    flex: {
-        flex: 1
+    chumpImage: {
+        width: '75%',
+        display: 'block',
+        margin: 'auto',
     }
 });
 
-class DayCounter extends Component {
+class CurrentChump extends Component {
 
     render() {
         const {classes} = this.props;
 
         return (
             <div className={classNames(classes.section)}>
-                <div>69</div>
-                <div style={{fontSize: '0.5em'}}>As of 1st Smarch 2031</div>
+                <div><img className={classes.chumpImage} src={"https://i.imgur.com/qPGkmgv.jpg"}/></div>
+                <div>to moje imię</div>
+
             </div>
         )
     }
 }
 
-DayCounter.propTypes = {
+CurrentChump.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
 const combinedStyles = combineStyles(styles, commonStyle);
 
-export default withStyles(combinedStyles)(DayCounter)
+export default withStyles(combinedStyles)(CurrentChump)

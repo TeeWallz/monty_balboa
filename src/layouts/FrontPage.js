@@ -13,10 +13,22 @@ import DayCounter from "../components/monty_stats/DayCounter";
 // import MenuIcon from '@material-ui/icons/Menu';
 
 // import * as authService from '../../../services/authService';
+import applyCommonTheme from "../styles/common";
+import combineStyles from "../utils/combineStyles";
+import commonStyle from "../styles/common";
+import CurrentChump from "../components/monty_stats/CurrentChump";
+import MiniStats from "../components/monty_stats/MiniStats";
+import CommentsContainer from "../components/social/CommentsContainer";
+import ChumpHistory from "../components/history/ChumpHisitory";
+import HitBoxChart from "../components/monty_stats/HitBoxChart";
+// console.log(theme_common)
+
 
 const drawerWidth = 250;
 
-const styles = theme => ({
+
+
+const frontPageStyle = theme => ({
     header: {
         backgroundColor: '#fff5ee',
         // height: '50px',
@@ -33,11 +45,26 @@ class FrontPage extends Component {
 
     render() {
         const {classes} = this.props;
+        // const {parentStyles} = this.props;
+
+        console.log(classes.section)
 
         return (
-            <div className={classes.header}>
+            <React.Fragment>
+                {/*<div className={classNames(classes.header, classes.section)} />*/}
                 <DayCounter />
-            </div>
+                <CurrentChump />
+                <MiniStats />
+                <ChumpHistory />
+
+
+                <HitBoxChart/>
+                <CommentsContainer />
+                {/*<Current Image*/}
+                {/*<Data (Graph, history, average)*/}
+                {/*<Comments*/}
+            </React.Fragment>
+
         )
     }
 }
@@ -53,4 +80,6 @@ const mapDispatchToProps = dispatch => ({
     // actions: bindActionCreators(Object.assign({}, authService), dispatch)
 });
 
-export default withStyles(styles)(FrontPage)
+const combinedStyles = combineStyles(frontPageStyle, commonStyle);
+
+export default withStyles(combinedStyles)(FrontPage)

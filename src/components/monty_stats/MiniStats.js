@@ -6,6 +6,8 @@ import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
+import StreakGraph from "./StreakGraph";
+import StreakStats from "./StreakStats";
 
 
 const styles = theme => ({
@@ -18,27 +20,33 @@ const styles = theme => ({
     },
     flex: {
         flex: 1
-    }
+    },
+    smallText:{
+        fontSize: '0.5em'
+    },
+
 });
 
-class DayCounter extends Component {
+class MiniStats extends Component {
 
     render() {
         const {classes} = this.props;
 
         return (
             <div className={classNames(classes.section)}>
-                <div>69</div>
-                <div style={{fontSize: '0.5em'}}>As of 1st Smarch 2031</div>
+                <div>Stats</div>
+                <StreakGraph />
+                <hr style={{width:'100%'}} />
+                <StreakStats/>
             </div>
         )
     }
 }
 
-DayCounter.propTypes = {
+MiniStats.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
 const combinedStyles = combineStyles(styles, commonStyle);
 
-export default withStyles(combinedStyles)(DayCounter)
+export default withStyles(combinedStyles)(MiniStats)

@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Header from "./Header";
 
+
 // Import custom components
 // import Header from '../header/Header';
 // import MiniDrawer from '../drawer/MiniDrawer';
 // import Footer from '../footer/Footer';
+
 
 const styles = (theme) => ({
     root: {
@@ -23,34 +25,26 @@ const styles = (theme) => ({
         justifyContent: 'center',
         paddingBottom: '32px',
         paddingTop: '8px',
+        marginTop: '10px',
         margin: 'auto',
-
         padding: '10px',
+        backgroundColor: '#fff5ee',
+
         [theme.breakpoints.up('xs')]: {
             marginLeft: '10px',
             marginRight: '10px',
         },
-        [theme.breakpoints.up('md')]: {
-            'marginLeft': 'auto',
-            'marginRight': 'auto',
-            width: '800px',
-        },
+        // [theme.breakpoints.up('md')]: {
+        //     'marginLeft': 'auto',
+        //     'marginRight': 'auto',
+        //     width: '800px',
+        // },
     },
     content: {
         width: '100%',
         flexGrow: 1,
     },
-    section:{
-        background-color: var(--section-bg-color);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 8px;
-        margin-right: 8px;
-        padding: 8px;
-        box-shadow: 2px 2px 2px 2px var(--box-shadow-color);
-        margin-bottom: 32px;
-    }
+
 });
 
 const MainLayout = (props) => {
@@ -65,7 +59,8 @@ const MainLayout = (props) => {
                 <Header/>
                 {/*<Header navDrawerOpen={open} handleToggleDrawer={handleToggle} />*/}
                 {/*<MiniDrawer navDrawerOpen={open} />*/}
-                <main className={classes.content}>{children}</main>
+                {/*<main className={classes.content} >{children}</main>*/}
+                {children}
             </div>
             {/*<Footer />*/}
         </div>

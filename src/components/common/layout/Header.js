@@ -9,15 +9,17 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import commonTheme from "../../../styles/common";
+import combineStyles from "../../../utils/combineStyles";
+import commonStyle from "../../../styles/common";
 // import MenuIcon from '@material-ui/icons/Menu';
 
 // import * as authService from '../../../services/authService';
 
-const drawerWidth = 250;
 
-const styles = theme => ({
+const headerStyle = theme => ({
     header: {
-        backgroundColor: '#fff5ee',
+        // backgroundColor: '#fff5ee',
         // height: '50px',
     },
     header_image:{
@@ -34,7 +36,7 @@ class Header extends Component {
         const {classes} = this.props;
 
         return (
-            <div className={classes.header}>
+            <div className={classNames(classes.header)}>
                 <img className={classes.header_image} src={"https://howmanydayssincemontaguestreetbridgehasbeenhit.com/static/img/monty_header.png"} />
             </div>
         )
@@ -52,4 +54,6 @@ const mapDispatchToProps = dispatch => ({
     // actions: bindActionCreators(Object.assign({}, authService), dispatch)
 });
 
-export default withStyles(styles)(Header)
+const combinedStyles = combineStyles(headerStyle, commonStyle);
+
+export default withStyles(combinedStyles)(Header)

@@ -16,7 +16,7 @@ class Template extends Component {
         const {classes} = this.props;
 
         return (
-            <div className={classNames(classes.section)}>
+            <div className={classNames(classes.section, classes.sectionWidth)}>
                 69
             </div>
         )

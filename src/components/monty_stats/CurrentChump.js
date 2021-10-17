@@ -4,25 +4,32 @@ import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
+import Chumps from "../../data/chumps";
 
 
 const styles = theme => ({
     chumpImage: {
-        width: '75%',
+        width: '60%',
         display: 'block',
         margin: 'auto',
-    }
+    },
+    chumpName: {
+        fontSize: '4vw',
+    },
 });
 
 class CurrentChump extends Component {
 
     render() {
         const {classes} = this.props;
+        const chumps = Chumps()
 
         return (
-            <div className={classNames(classes.section)}>
-                <div><img className={classes.chumpImage} src={"https://i.imgur.com/qPGkmgv.jpg"}/></div>
-                <div>to moje imię</div>
+            <div className={classNames(classes.section, classes.sectionWidth)}>
+                <div><img className={classes.chumpImage} src={chumps[0].chumps[0].image}/></div>
+                <div className={classNames(classes.chumpName)}>
+                    <a href={chumps[0].chumps[0].url} target="_blank" >{chumps[0].chumps[0].name}</a>
+                </div>
 
             </div>
         )

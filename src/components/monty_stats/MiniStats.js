@@ -21,9 +21,6 @@ const styles = theme => ({
     flex: {
         flex: 1
     },
-    smallText:{
-        fontSize: '0.5em'
-    },
 
 });
 
@@ -33,10 +30,10 @@ class MiniStats extends Component {
         const {classes} = this.props;
 
         return (
-            <div className={classNames(classes.section)}>
-                <div>Stats</div>
-                <StreakGraph />
-                <hr style={{width:'100%'}} />
+            <div className={classNames(classes.section, classes.sectionWidth)}>
+                <div className={classNames(classes.commonHeaderText)}>Stats</div>
+                {/*<StreakGraph />*/}
+                {/*<hr style={{width:'100%'}} />*/}
                 <StreakStats/>
             </div>
         )

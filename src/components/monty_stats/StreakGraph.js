@@ -2,21 +2,11 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
+import { VictoryChart, VictoryHistogram, VictoryLabel } from "victory";
+
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
-import {
-    Bar,
-    BarChart,
-    CartesianGrid,
-    Legend,
-    Line,
-    LineChart,
-    ResponsiveContainer,
-    Tooltip,
-    XAxis,
-    YAxis
-} from "recharts";
-
+import Chumps from "../../data/chumps";
 
 const styles = theme => ({
     streakGraph:{
@@ -26,44 +16,54 @@ const styles = theme => ({
     },
 });
 
-const data = [
-    {
-        year: '2019',
-        hits: 10,
-    },
-    {
-        year: '2020',
-        hits: 20,
-    },
-    {
-        year: '2021',
-        hits: 15,
-    },
-
-];
+const sampleHistogramData = [
+    { x: 0 },
+    { x: 1 },
+    { x: 1 },
+    { x: 2 },
+    { x: 3 },
+    { x: 4 },
+    { x: 4 }
+]
 
 class StreakGraph extends Component {
 
     render() {
         const {classes} = this.props;
+        const chumps = Chumps();
+        // const streakArray = chumps.map(e => x: e.streak});
+        const streakArray = chumps.map(chump => ({ x: chump.streak }));
+
 
         return (
-            <div className={classNames(classes.streakGraph)}>
-                <ResponsiveContainer width="100%" height="100%">
-                    <BarChart
-                        // width={500}
-                        // height={300}
-                        data={data}
-                        margin={{ top: 0, left: -40, right: -10, bottom: 0 }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="year" />
-                        <YAxis />
-                        {/*<Tooltip />*/}
-                        <Legend />
-                        <Bar dataKey="hits" fill="#8884d8" />
-                    </BarChart>
-                </ResponsiveContainer>
+            <div className={classNames(classes.section)}>
+                <VictoryChart
+                    domainPadding={{ x: 20 }}
+                >
+                    <VictoryLabel
+                        x={225}
+                        y={25}
+                        textAnchor="middle"
+                        text="Histogram of Streaks"
+                    />
+                    <VictoryLabel
+                        x={225}
+                        y={290}
+                        textAnchor="middle"
+                        text="Streaks in days"
+                    />
+                    <VictoryHistogram
+                        style={{
+                            // data: { fill: "#c43a31" }
+                        }}
+                        cornerRadius={5}
+                        x = "streak"
+                        data={chumps}
+                        // bins={[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200, 300]}
+                        bins={15}
+                        labels={({ datum }) => `${datum.y}`}
+                    />
+                </VictoryChart>
             </div>
         )
     }

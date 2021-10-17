@@ -11,7 +11,9 @@ const commonStyle = theme => ({
             boxShadow: '2px 2px 2px 2px rgba(170, 170, 170, 0.67)',
             marginBottom: '8px',
             backgroundColor: '#FFF',
+        },
 
+        sectionWidth: {
             [theme.breakpoints.up('xs')]: {
                 marginLeft: '10px',
                 marginRight: '10px',
@@ -21,7 +23,19 @@ const commonStyle = theme => ({
                 'marginRight': 'auto',
                 width: '800px',
             },
-        }
+        },
+        commonHeaderText: {
+            fontSize: '5vw',
+        },
+        commonBigText: {
+            fontSize: '4vw',
+        },
+        commonRegularText: {
+            fontSize: '3vw',
+        },
+        commonSmallText: {
+            fontSize: '2vw',
+        },
 });
 export default commonStyle;
 

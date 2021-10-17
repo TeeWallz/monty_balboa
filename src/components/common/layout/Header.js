@@ -21,9 +21,13 @@ const headerStyle = theme => ({
     header: {
         // backgroundColor: '#fff5ee',
         // height: '50px',
+        maxWidth: '815px',
+        marginLeft: 'auto',
+        marginRight: 'auto',
     },
     header_image:{
         width: '100%',
+
     },
     flex: {
         flex: 1
@@ -36,7 +40,7 @@ class Header extends Component {
         const {classes} = this.props;
 
         return (
-            <div className={classNames(classes.header)}>
+            <div className={classNames(classes.sectionWidth)}>
                 <img className={classes.header_image} src={"https://howmanydayssincemontaguestreetbridgehasbeenhit.com/static/img/monty_header.png"} />
             </div>
         )

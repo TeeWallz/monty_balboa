@@ -16,7 +16,7 @@ class CommentsContainer extends Component {
         const {classes} = this.props;
 
         return (
-            <div className={classNames(classes.section)}>
+            <div className={classNames(classes.section, classes.sectionWidth)}>
                 <div>Comment</div>
                 <div>Comment</div>
                 <div>Comment</div>

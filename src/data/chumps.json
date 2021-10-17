@@ -436,8 +436,8 @@
   },
   {
     "date": "2016-02-22",
-    "thanks": "Test Thanks",
-    "streak": "?",
+    "thanks": "",
+    "streak": 0,
     "chumps": [
       {
         "name": "Tour Bus",

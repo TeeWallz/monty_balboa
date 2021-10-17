@@ -19,12 +19,10 @@ import commonStyle from "../styles/common";
 import CurrentChump from "../components/monty_stats/CurrentChump";
 import MiniStats from "../components/monty_stats/MiniStats";
 import CommentsContainer from "../components/social/CommentsContainer";
-import ChumpHistory from "../components/history/ChumpHisitory";
+import ChumpHistory from "../components/history/ChumpHistory";
 import HitBoxChart from "../components/monty_stats/HitBoxChart";
+import StreakGraph from "../components/monty_stats/StreakGraph";
 // console.log(theme_common)
-
-
-const drawerWidth = 250;
 
 
 
@@ -47,11 +45,9 @@ class FrontPage extends Component {
         const {classes} = this.props;
         // const {parentStyles} = this.props;
 
-        console.log(classes.section)
-
         return (
             <React.Fragment>
-                {/*<div className={classNames(classes.header, classes.section)} />*/}
+                {/*<div className={classNames(classes.header, classes.section, classes.sectionWidth)} />*/}
                 <DayCounter />
                 <CurrentChump />
                 <MiniStats />
@@ -59,6 +55,7 @@ class FrontPage extends Component {
 
 
                 <HitBoxChart/>
+                <StreakGraph />
                 <CommentsContainer />
                 {/*<Current Image*/}
                 {/*<Data (Graph, history, average)*/}

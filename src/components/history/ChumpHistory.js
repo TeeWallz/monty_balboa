@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
+
+import { format } from 'date-fns'
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
@@ -34,7 +36,7 @@ class ChumpHistory extends Component {
             let kek = 1;
             return (
                 <tr>
-                    <td className={classNames(classes.commonRegularText)}>{chumps[i].date}</td>
+                    <td className={classNames(classes.commonRegularText)}>{format(chumps[i].parsedDate, 'dd/MM/yyyy')}</td>
                     <td className={classNames(classes.commonRegularText)}>{chumps[i].streak}</td>
                     <td className={classNames(classes.commonSmallText)}>{chumps[i].chumps[0].name}</td>
                 </tr>

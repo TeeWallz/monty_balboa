@@ -13,6 +13,9 @@ import skewness from "../../utils/Skewness";
 const styles = theme => ({
     StreakStatsText:{
         fontSize: '3vw',
+    },
+    textAlignRight:{
+        textAlign: 'right',
     }
 });
 
@@ -62,11 +65,15 @@ class StreakStats extends Component {
 
         return (
             <div >
-                <div className={classes.commonRegularText}>Average Streak: {averageStreak} days</div>
-                <div className={classes.commonRegularText}>Median Streak: {medianStreak} days</div>
-                <div className={classes.commonRegularText}>Standard Deviation: {stdDev} days</div>
-                <div className={classes.commonRegularText}>skewness: {setSkewness}</div>
-                <div className={classes.commonRegularText}>Current Status: {streakStatus}</div>
+                <table className={classes.commonRegularText}>
+                    <tbody>
+                        <tr><td className={classNames(classes.textAlignRight)}>Average Streak:</td><td>{averageStreak} days</td></tr>
+                        <tr><td className={classNames(classes.textAlignRight)}>Median Streak:</td><td>{medianStreak} days</td></tr>
+                        <tr><td className={classNames(classes.textAlignRight)}>Standard Deviation:</td><td>{stdDev} days</td></tr>
+                        <tr><td className={classNames(classes.textAlignRight)}>Skewness:</td><td>{setSkewness}</td></tr>
+                        <tr><td className={classNames(classes.textAlignRight)}>Current Status:</td><td>{streakStatus}</td></tr>
+                    </tbody>
+                </table>
             </div>
         )
     }

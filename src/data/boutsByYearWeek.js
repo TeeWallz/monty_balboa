@@ -26,21 +26,17 @@ function boutsByYearWeek(){
             boutData[currentYear] = {}
         }
 
-        boutData[currentYear][currentWeek] = 0;
+        boutData[currentYear][currentWeek] = {chumps: []};
     }
 
     // Load bouts into out skeleton
     for(const bout of chumps){
-        boutData[getYear(bout.parsedDate)][getWeek(bout.parsedDate)] = bout.chumps.length;
+        boutData[getYear(bout.parsedDate)][getWeek(bout.parsedDate)] = bout;
         if(bout.chumps.length > 1){
-            console.log(bout)
+            // console.log(bout)
         }
         let hehe = 1;
     }
-
-    console.log('boutData', boutData);
-
-
     return boutData;
 
 

@@ -36,7 +36,7 @@ class StreakGraph extends Component {
 
 
         return (
-            <div className={classNames(classes.section)}>
+            <div className={classNames(classes.section, classes.sectionWidth)}>
                 <VictoryChart
                     domainPadding={{ x: 20 }}
                 >

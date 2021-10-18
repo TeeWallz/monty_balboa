@@ -2,8 +2,11 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
+import { DiscussionEmbed } from 'disqus-react';
+
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
+import DisqussContainer from "./DisqussContainer";
 
 
 const styles = theme => ({
@@ -17,10 +20,20 @@ class CommentsContainer extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
-                <div>Comment</div>
-                <div>Comment</div>
-                <div>Comment</div>
-                <div>Comment</div>
+
+                {/*<DiscussionEmbed*/}
+                {/*    shortname='example'*/}
+                {/*    config={*/}
+                {/*        {*/}
+                {/*            url: 'localhost:3000',*/}
+                {/*            identifier: 'montybalboa',*/}
+                {/*            title: 'My Title',*/}
+                {/*        }*/}
+                {/*    }*/}
+                {/*/>*/}
+
+                <DisqussContainer />
+
             </div>
         )
     }

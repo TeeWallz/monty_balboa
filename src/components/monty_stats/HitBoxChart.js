@@ -36,7 +36,7 @@ const styles = theme => ({
         marginBottom: 0,
         padding: 0,
         marginRight: '8px',
-        minWidth: '40px',
+        // minWidth: '40px',
         fontSize: '2.5vw',
     },
     hitList: {
@@ -45,14 +45,18 @@ const styles = theme => ({
     },
     hitBox: {
         // width: '22px',
-        // height: '17px',
-        width: '10px',
-        height: '7px',
         background: 'grey',
         marginRight: '1px',
         marginLeft: '1px',
         marginBottom: '2px',
         fontSize: '0.1em',
+        // height: '17px',
+        width: '18px',
+        height: '17px',
+        [theme.breakpoints.up('md')]: {
+            width: '18px',
+            height: '17px',
+        },
     },
     hitBoxDoubleKill: {
         backgroundColor: '#6f110b'

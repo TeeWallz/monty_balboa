@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
+import Table from 'react-bootstrap/Table'
 
 import { format } from 'date-fns'
 import combineStyles from "../../utils/combineStyles";
@@ -46,7 +47,7 @@ class ChumpHistory extends Component {
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
                 <div className={classNames(classes.headerText)}>Recent Top 'Hits'</div>
-                <table className={classNames(classes.historyTable, classes.commonRegularText)}>
+                <Table className={classNames(classes.historyTable, classes.commonRegularText)}>
                     <thead>
                         <tr>
                             <td>Date</td>
@@ -58,7 +59,7 @@ class ChumpHistory extends Component {
                     {rows}
                     </tbody>
 
-                </table>
+                </Table>
                 <div className={classNames(classes.commonSmallText)} style={{textAlign: 'right', width: '100%'}}>
                     See More >>
                 </div>

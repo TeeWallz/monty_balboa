@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import Table from 'react-bootstrap/Table'
+import {getYear} from "date-fns";
 import {withStyles} from '@material-ui/core/styles';
+
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
-import {getYear} from "date-fns";
+
 import {median} from "../../utils/Maths";
 import skewness from "../../utils/Skewness";
 
@@ -65,7 +68,7 @@ class StreakStats extends Component {
 
         return (
             <div >
-                <table className={classes.commonRegularText}>
+                <Table className={classes.commonRegularText}>
                     <tbody>
                         <tr><td className={classNames(classes.textAlignRight)}>Average Streak:</td><td>{averageStreak} days</td></tr>
                         <tr><td className={classNames(classes.textAlignRight)}>Median Streak:</td><td>{medianStreak} days</td></tr>
@@ -73,7 +76,7 @@ class StreakStats extends Component {
                         <tr><td className={classNames(classes.textAlignRight)}>Skewness:</td><td>{setSkewness}</td></tr>
                         <tr><td className={classNames(classes.textAlignRight)}>Current Status:</td><td>{streakStatus}</td></tr>
                     </tbody>
-                </table>
+                </Table>
             </div>
         )
     }

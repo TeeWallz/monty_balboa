@@ -4,16 +4,16 @@ import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
 import Table from 'react-bootstrap/Table'
 
-import { format } from 'date-fns'
+import {format} from 'date-fns'
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
 import boutsByYearWeek from "../../data/boutsByYearWeek";
-
+import LightboxExample from "../lightbox/Lightbox";
 
 
 const styles = theme => ({
-    historyTable:{
+    historyTable: {
         fontSize: '0.5em',
     },
     headerText: {
@@ -25,45 +25,48 @@ const styles = theme => ({
 });
 
 
-
 class ChumpHistory extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {historyLimit: 10};
+        // this.expandHistory = this.expandHistory.bind(this);
+    }
 
     render() {
         const {classes} = this.props;
-        const {historyLimit} = this.props;
         const chumps = Chumps()
 
-        const rows = [...Array(10)].map((_, i) => {
+        const rows = chumps.map((_, i) => {
             let kek = 1;
+            console.log(chumps[i])
             return (
                 <tr>
                     <td className={classNames(classes.commonRegularText)}>{format(chumps[i].parsedDate, 'dd/MM/yyyy')}</td>
                     <td className={classNames(classes.commonRegularText)}>{chumps[i].streak}</td>
                     <td className={classNames(classes.commonSmallText)}>{chumps[i].chumps[0].name}</td>
+                    <td className={classNames(classes.commonSmallText)}>🮥</td>
                 </tr>
             )
         });
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
-                <div className={classNames(classes.headerText)}>Recent Top 'Hits'</div>
+                <div className={classNames(classes.headerText)}>History (Think of funny thing)</div>
                 <Table className={classNames(classes.historyTable, classes.commonRegularText)}>
                     <thead>
-                        <tr>
-                            <td>Date</td>
-                            <td>Streak</td>
-                            <td>"""winner"""</td>
-                        </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>Streak</td>
+                        <td>"""winner"""</td>
+                        <td>Image</td>
+                    </tr>
                     </thead>
                     <tbody>
                     {rows}
                     </tbody>
 
                 </Table>
-                <div className={classNames(classes.commonSmallText)} style={{textAlign: 'right', width: '100%'}}>
-                    See More >>
-                </div>
-
+                <LightboxExample />
             </div>
         )
     }

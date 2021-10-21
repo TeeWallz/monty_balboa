@@ -77,8 +77,6 @@ function getPopupData(yearWeek){
         return '';
     }
 
-    console.log("ass")
-
     const yearWeekSplit = yearWeek.split("/");
     const ass = ourBoutsByYearWeek[yearWeekSplit[0]][yearWeekSplit[1]]
     if(ass.length == 0){

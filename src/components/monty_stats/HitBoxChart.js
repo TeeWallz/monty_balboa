@@ -67,44 +67,69 @@ const styles = theme => ({
     hitBoxSafe: {
         backgroundColor: '#33b5e5'
     },
-
 });
 
-function getPopupData(yearWeek){
-    const ourBoutsByYearWeek = boutsByYearWeek()
-
-    if (!(typeof yearWeek === 'string' || yearWeek instanceof String)){
-        return '';
+const localStyle = {
+    popupBox: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        fontSize: '0.8em'
     }
-
-    const yearWeekSplit = yearWeek.split("/");
-    const ass = ourBoutsByYearWeek[yearWeekSplit[0]][yearWeekSplit[1]]
-    if(ass.length == 0){
-        return ""
-    }
-    return (
-        <div>
-            <div style={{width:'100px', marginLeft: 'auto', marginRight: 'auto'}}>
-                <img src={ass.chumps[0].image} style={{width:'100%'}}/>
-            </div>
-            <div >{ass.chumps[0].name}</div>
-        </div>
-    )
 }
 
-class HitBoxChart extends Component {
 
+class HitBoxChart extends Component {
+    constructor(props) {
+        super(props);
+        this.getPopupData = this.getPopupData.bind(this);
+        // this.openModal = this.openModal.bind(this);
+    }
+
+
+    getPopupData(yearWeek) {
+        const ourBoutsByYearWeek = boutsByYearWeek()
+
+        // Is our entry null/invalid? If so, return default value
+        if (!(typeof yearWeek === 'string' || yearWeek instanceof String)) {
+            return '';
+        }
+
+        // We only get a key string, so split it to access our array
+        const yearWeekSplit = yearWeek.split("/");
+        const ass = ourBoutsByYearWeek[yearWeekSplit[0]][yearWeekSplit[1]]
+        if (ass.length == 0) {
+            return ""
+        }
+
+
+        return (
+            <div style={localStyle.popupBox}>
+                <img src={ass.chumps[0].image} style={{width: '7em'}}/>
+                <div>{ass.date}</div>
+                <div>{ass.chumps[0].name}</div>
+            </div>
+        )
+    }
+
+    // openModal(year, elemWeek) {
+    //     console.log(year, elemWeek)
+    //     this.setState({
+    //
+    //     })
+    // }
 
     render() {
 
         const {classes} = this.props;
+        const {lightbox} = this.props;
 
         const bouts = boutsByYearWeek();
         const years = Object.keys(bouts).reverse();
 
         const rows = years.map(year => (
             <div className={classes.chartRow}>
-                <ReactTooltip id="registerTip" place="top" effect="solid" getContent={getPopupData}>
+                <ReactTooltip id="registerTip" place="top" effect="solid" getContent={this.getPopupData}>
                 </ReactTooltip>
 
                 <div className={classNames(classes.year, classes.commonBigText)}>{year}</div>
@@ -114,19 +139,20 @@ class HitBoxChart extends Component {
                         Object.keys(bouts[year]).map(elemWeek => (
 
 
-
                             <div className={classes.hitList}>
-                                <div data-tip={year + "/" + elemWeek} data-for={bouts[year][elemWeek].chumps.length > 0 ? 'registerTip' : ''} className={
-                                    classNames(classes.hitBox, {
-                                        [classes.hitBoxDoubleKill]: bouts[year][elemWeek].chumps.length > 1,
-                                        [classes.hitBoxHit]: bouts[year][elemWeek].chumps.length === 1,
-                                        [classes.hitBoxSafe]: bouts[year][elemWeek].chumps.length === 0
-                                    })
-                                }>
+                                {/*<div onClick={() => lightbox.openMe(year, elemWeek)}*/}
+                                <div onClick={() => this.props.setLightboxData({lightboxIsOpen: true, key: [year, elemWeek]})}
+                                    data-tip={year + "/" + elemWeek} data-for={bouts[year][elemWeek].chumps.length > 0 ? 'registerTip' : ''} className={
+                                        classNames(classes.hitBox, {
+                                            [classes.hitBoxDoubleKill]: bouts[year][elemWeek].chumps.length > 1,
+                                            [classes.hitBoxHit]: bouts[year][elemWeek].chumps.length === 1,
+                                            [classes.hitBoxSafe]: bouts[year][elemWeek].chumps.length === 0
+                                        })
+
+                                    }>
                                     {bouts[year][elemWeek].length}
                                 </div>
                             </div>
-
 
 
                         ))
@@ -134,8 +160,6 @@ class HitBoxChart extends Component {
                 </div>
             </div>
         ));
-
-        let y = 8;
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
@@ -147,17 +171,6 @@ class HitBoxChart extends Component {
                 <div className={classNames(classes.commonSmallText)} style={{textAlign: 'right', width: '100%'}}>
                     Legend for colours here. Make boxes clickable/hoverable?
                 </div>
-            </div>
-        )
-
-
-        return (
-            <div className={classNames(classes.section, classes.sectionWidth)}>
-                <button data-tip data-for="registerTip">
-                    Register
-                </button>
-
-
             </div>
         )
 

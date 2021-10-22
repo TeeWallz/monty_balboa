@@ -11,6 +11,7 @@ function Chumps(){
         singleChump['parsedDate'] = parse( singleChump['date'], 'yyyy-MM-dd', new Date() )
         singleChump['date_year'] = getYear( singleChump['parsedDate'] )
         singleChump['date_weekyear'] = getWeekYear( singleChump['parsedDate'] )
+        singleChump['date_week'] = getWeek( singleChump['parsedDate'] )
     }, rawChumps); // use arr as this
 
     // Load streak for current chump

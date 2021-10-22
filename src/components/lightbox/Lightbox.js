@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import 'react-image-lightbox/style.css';
+import Chumps from "../../data/chumps"; // This only needs to be imported once in your app
 
 const images = [
     'https://frontend-collective.github.io/react-image-lightbox/1.0d2c9d24.jpg',
@@ -16,35 +17,37 @@ const customStyles = {
 export default class LightboxExample extends Component {
     constructor(props) {
         super(props);
-        let yeet = 1;
+        const chumps = Chumps();
 
         this.state = {
-            bouts: this.props.chumps,
+            bouts: chumps,
             photoIndex: 0,
-            isOpen: false,
+            // isOpen: false,
             // imageTitle: '11010\n' + this.props.chumps[0].chumps[0].name,
-            imageTitle: this.props.chumps[0].date + " - " + this.props.chumps[0].chumps[0].name,
+            imageTitle: chumps[0].date + " - " + chumps[0].chumps[0].name,
         };
     }
 
+    openMe(){
+        console.log("openMe")
+    }
+
     render() {
-        const { photoIndex, isOpen } = this.state;
-        console.log(this.state.bouts[photoIndex].chumps[0].image);
-        console.log(photoIndex);
+        const photoIndex = this.props.lightboxCurrentChumpId;
+        const isOpen = this.props.lightboxIsOpen
+        todo :
+        imagetitle doesnt change due to never being set on external click
+        onMovePrevRequest etc need to reference parent state
 
         return (
             <div>
-                <button type="button" onClick={() => this.setState({ isOpen: true })}>
-                    Open Lightbox
-                </button>
-
                 {isOpen && (
                     <Lightbox
                         reactModalStyle={customStyles}
                         mainSrc={this.state.bouts[photoIndex].chumps[0].image}
                         nextSrc={this.state.bouts[(photoIndex + 1) % this.state.bouts.length].chumps[0].image}
                         prevSrc={this.state.bouts[(photoIndex + this.state.bouts.length - 1) % this.state.bouts.length].chumps[0].image}
-                        onCloseRequest={() => this.setState({ isOpen: false })}
+                        onCloseRequest={() => this.props.setLightboxData({lightboxIsOpen: false})}
                         imageTitle={this.state.imageTitle}
                         onMovePrevRequest={() => {
                             const idx = (photoIndex + this.state.bouts.length - 1) % this.state.bouts.length;

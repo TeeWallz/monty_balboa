@@ -9,7 +9,7 @@ import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
 import boutsByYearWeek from "../../data/boutsByYearWeek";
-import LightboxExample from "../lightbox/Lightbox";
+
 
 
 const styles = theme => ({
@@ -34,17 +34,21 @@ class ChumpHistory extends Component {
 
     render() {
         const {classes} = this.props;
+        const {lightbox} = this.props;
         const chumps = Chumps()
 
         const rows = chumps.map((_, i) => {
             let kek = 1;
-            console.log(chumps[i])
+            // console.log(chumps[i])
             return (
                 <tr>
                     <td className={classNames(classes.commonRegularText)}>{format(chumps[i].parsedDate, 'dd/MM/yyyy')}</td>
                     <td className={classNames(classes.commonRegularText)}>{chumps[i].streak}</td>
                     <td className={classNames(classes.commonSmallText)}>{chumps[i].chumps[0].name}</td>
-                    <td className={classNames(classes.commonSmallText)}>🮥</td>
+                    <td className={classNames(classes.commonSmallText)}
+                        style={{cursor: 'pointer'}}
+                        onClick={() => this.props.setLightboxData({lightboxIsOpen: true, lightboxCurrentChumpId: i})}
+                    >🮥</td>
                 </tr>
             )
         });
@@ -66,7 +70,7 @@ class ChumpHistory extends Component {
                     </tbody>
 
                 </Table>
-                <LightboxExample chumps={chumps}/>
+                <lightbox chumps={chumps}/>
             </div>
         )
     }

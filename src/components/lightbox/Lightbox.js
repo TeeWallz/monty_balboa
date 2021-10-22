@@ -7,21 +7,30 @@ const images = [
     'https://frontend-collective.github.io/react-image-lightbox/2.a8dae120.jpg',
 ];
 
+const customStyles = {
+    content: {
+        fontSize: '0.5em',
+    },
+};
+
 export default class LightboxExample extends Component {
     constructor(props) {
         super(props);
+        let yeet = 1;
 
         this.state = {
             bouts: this.props.chumps,
             photoIndex: 0,
             isOpen: false,
-            imageTitle: '',
+            // imageTitle: '11010\n' + this.props.chumps[0].chumps[0].name,
+            imageTitle: this.props.chumps[0].date + " - " + this.props.chumps[0].chumps[0].name,
         };
     }
 
     render() {
         const { photoIndex, isOpen } = this.state;
-        console.log(this.state.chumps);
+        console.log(this.state.bouts[photoIndex].chumps[0].image);
+        console.log(photoIndex);
 
         return (
             <div>
@@ -31,22 +40,27 @@ export default class LightboxExample extends Component {
 
                 {isOpen && (
                     <Lightbox
-                        mainSrc={this.state.bouts[photoIndex].image}
-                        nextSrc={images[(photoIndex + 1) % images.length]}
-                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                        reactModalStyle={customStyles}
+                        mainSrc={this.state.bouts[photoIndex].chumps[0].image}
+                        nextSrc={this.state.bouts[(photoIndex + 1) % this.state.bouts.length].chumps[0].image}
+                        prevSrc={this.state.bouts[(photoIndex + this.state.bouts.length - 1) % this.state.bouts.length].chumps[0].image}
                         onCloseRequest={() => this.setState({ isOpen: false })}
                         imageTitle={this.state.imageTitle}
-                        onMovePrevRequest={() =>
+                        onMovePrevRequest={() => {
+                            const idx = (photoIndex + this.state.bouts.length - 1) % this.state.bouts.length;
                             this.setState({
-                                photoIndex: (photoIndex + images.length - 1) % images.length,
-                                imageTitle: photoIndex
+                                photoIndex: idx,
+                                imageTitle: this.props.chumps[idx].date + " - " + this.state.bouts[idx].chumps[0].name
                             })
                         }
-                        onMoveNextRequest={() =>
+                        }
+                        onMoveNextRequest={() => {
+                            const idx = (photoIndex + 1) % this.state.bouts.length;
                             this.setState({
-                                photoIndex: (photoIndex + 1) % images.length,
-                                imageTitle: photoIndex
+                                photoIndex: idx,
+                                imageTitle: this.props.chumps[idx].date + " - " + this.state.bouts[idx].chumps[0].name
                             })
+                        }
                         }
                     />
                 )}

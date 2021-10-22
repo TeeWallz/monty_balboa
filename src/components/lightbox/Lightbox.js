@@ -12,6 +12,7 @@ export default class LightboxExample extends Component {
         super(props);
 
         this.state = {
+            bouts: this.props.chumps,
             photoIndex: 0,
             isOpen: false,
             imageTitle: '',
@@ -20,6 +21,7 @@ export default class LightboxExample extends Component {
 
     render() {
         const { photoIndex, isOpen } = this.state;
+        console.log(this.state.chumps);
 
         return (
             <div>
@@ -29,7 +31,7 @@ export default class LightboxExample extends Component {
 
                 {isOpen && (
                     <Lightbox
-                        mainSrc={images[photoIndex]}
+                        mainSrc={this.state.bouts[photoIndex].image}
                         nextSrc={images[(photoIndex + 1) % images.length]}
                         prevSrc={images[(photoIndex + images.length - 1) % images.length]}
                         onCloseRequest={() => this.setState({ isOpen: false })}

@@ -66,7 +66,7 @@ class ChumpHistory extends Component {
                     </tbody>
 
                 </Table>
-                <LightboxExample />
+                <LightboxExample chumps={chumps}/>
             </div>
         )
     }

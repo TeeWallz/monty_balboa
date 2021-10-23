@@ -45,12 +45,18 @@ class FrontPage extends Component {
     constructor(props) {
         super(props);
         this.setLightboxData = this.setLightboxData.bind(this);
+        this.lightboxTitle = this.lightboxTitle.bind(this);
         this.chumps = Chumps()
 
         this.state = {
             lightboxCurrentChumpId : 0,
             lightboxIsOpen: false,
+            lightboxTitle: '',
         }
+    }
+
+    lightboxTitle(idx){
+        return this.chumps[idx].date_aus_string + ' - ' + this.chumps[idx].chumps[0].name
     }
 
     setLightboxData(state) {
@@ -80,6 +86,7 @@ class FrontPage extends Component {
             <React.Fragment>
                 <LightboxExample lightboxCurrentChumpId={this.state.lightboxCurrentChumpId}
                                  lightboxIsOpen={this.state.lightboxIsOpen}
+                                 lightboxTitle={this.lightboxTitle}
                                  setLightboxData={this.setLightboxData}/>
 
                 <DayCounter />

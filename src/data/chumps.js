@@ -8,7 +8,9 @@ function loadRawChumps(){
 function Chumps(){
     let rawChumps = loadRawChumps()
     rawChumps.forEach(function(singleChump, index) {
+        singleChump['idx'] = index
         singleChump['parsedDate'] = parse( singleChump['date'], 'yyyy-MM-dd', new Date() )
+        singleChump['date_aus_string'] = format(singleChump['parsedDate'], 'dd/MM/yyyy')
         singleChump['date_year'] = getYear( singleChump['parsedDate'] )
         singleChump['date_weekyear'] = getWeekYear( singleChump['parsedDate'] )
         singleChump['date_week'] = getWeek( singleChump['parsedDate'] )

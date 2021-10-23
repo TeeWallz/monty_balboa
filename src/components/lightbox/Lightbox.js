@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import Chumps from "../../data/chumps"; // This only needs to be imported once in your app
@@ -21,23 +21,20 @@ export default class LightboxExample extends Component {
 
         this.state = {
             bouts: chumps,
-            photoIndex: 0,
-            // isOpen: false,
-            // imageTitle: '11010\n' + this.props.chumps[0].chumps[0].name,
-            imageTitle: chumps[0].date + " - " + chumps[0].chumps[0].name,
+            // photoIndex: 0,
+            // // isOpen: false,
+            // // imageTitle: '11010\n' + this.props.chumps[0].chumps[0].name,
+            // imageTitle: chumps[0].date + " - " + chumps[0].chumps[0].name,
         };
     }
 
-    openMe(){
+    openMe() {
         console.log("openMe")
     }
 
     render() {
         const photoIndex = this.props.lightboxCurrentChumpId;
         const isOpen = this.props.lightboxIsOpen
-        todo :
-        imagetitle doesnt change due to never being set on external click
-        onMovePrevRequest etc need to reference parent state
 
         return (
             <div>
@@ -48,23 +45,23 @@ export default class LightboxExample extends Component {
                         nextSrc={this.state.bouts[(photoIndex + 1) % this.state.bouts.length].chumps[0].image}
                         prevSrc={this.state.bouts[(photoIndex + this.state.bouts.length - 1) % this.state.bouts.length].chumps[0].image}
                         onCloseRequest={() => this.props.setLightboxData({lightboxIsOpen: false})}
-                        imageTitle={this.state.imageTitle}
+                        imageTitle={this.props.lightboxTitle(photoIndex)}
                         onMovePrevRequest={() => {
                             const idx = (photoIndex + this.state.bouts.length - 1) % this.state.bouts.length;
-                            this.setState({
-                                photoIndex: idx,
-                                imageTitle: this.props.chumps[idx].date + " - " + this.state.bouts[idx].chumps[0].name
+
+                            this.props.setLightboxData({
+                                lightboxCurrentChumpId: idx,
+                                lightboxTitle: this.props.lightboxTitle(idx),
                             })
-                        }
-                        }
+                        }}
                         onMoveNextRequest={() => {
                             const idx = (photoIndex + 1) % this.state.bouts.length;
-                            this.setState({
-                                photoIndex: idx,
-                                imageTitle: this.props.chumps[idx].date + " - " + this.state.bouts[idx].chumps[0].name
+
+                            this.props.setLightboxData({
+                                lightboxCurrentChumpId: idx,
+                                lightboxTitle: this.props.lightboxTitle(idx),
                             })
-                        }
-                        }
+                        }}
                     />
                 )}
             </div>

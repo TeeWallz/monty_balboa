@@ -28,7 +28,7 @@ class CurrentChump extends Component {
             <div className={classNames(classes.section, classes.sectionWidth)}>
                 <div className={classes.commonHeaderText}>Current ''''champion''''</div>
                 <div><img className={classes.chumpImage} src={chumps[0].chumps[0].image}/></div>
-                <div className={classNames(classes.chumpName)}>
+                <div className={classNames(classes.chumpName, classes.commonBigText)}>
                     <a href={chumps[0].chumps[0].url} target="_blank" >{chumps[0].chumps[0].name}</a>
                 </div>
 

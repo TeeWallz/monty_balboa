@@ -29,11 +29,14 @@ const styles = (theme) => ({
         margin: 'auto',
         padding: '10px',
         backgroundColor: '#fff5ee',
+        alignItems: 'center',
 
         [theme.breakpoints.up('xs')]: {
             marginLeft: '10px',
             marginRight: '10px',
         },
+
+        flexGrow: 1,
         // [theme.breakpoints.up('md')]: {
         //     'marginLeft': 'auto',
         //     'marginRight': 'auto',

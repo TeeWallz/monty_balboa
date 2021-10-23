@@ -15,15 +15,7 @@ import boutsByYearWeek from "../../data/boutsByYearWeek";
 
 
 const styles = theme => ({
-    historyTable: {
-        fontSize: '0.5em',
-    },
-    headerText: {
-        fontSize: '5vw',
-    },
-    regularText: {
-        fontSize: '2vw',
-    },
+
 });
 
 const products = [{id: 1, name: 'yeet', price: 1}];
@@ -34,15 +26,19 @@ const columns = [
         sortValue: (cell, row) => parse(cell, 'dd/MM/yyyy'),
         sort: true,
         headerStyle: {
-            fontSize: '0.5em'
+            fontSize: '0.5em',
+            width: '8em',
+            textAlign: 'center',
         },
         style: {
-            fontSize: '0.5em'
+            fontSize: '0.5em',
+            width: '8em',
+            textAlign: 'center',
         },
     },
     {
         dataField: 'name',
-        text: 'Product Name',
+        text: 'Chump',
         sort: true,
         headerStyle: {
             fontSize: '0.5em'
@@ -56,11 +52,13 @@ const columns = [
         dataField: 'image',
         headerStyle: {
             fontSize: '0.5em',
-            width: '5em',
+            width: '8em',
             textAlign: 'center',
         },
         style: {
-            fontSize: '0.5em'
+            fontSize: '0.5em',
+            width: '8em',
+            textAlign: 'center',
         },
 
     }
@@ -123,7 +121,7 @@ class ChumpHistory extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
-                <div className={classNames(classes.headerText)}>History (Think of funny thing)</div>
+                <div className={classNames(classes.commonHeaderText)}>History (Think of funny thing)</div>
                 {/*<Table className={classNames(classes.historyTable, classes.commonRegularText)}>*/}
                 {/*    <thead>*/}
                 {/*    <tr>*/}

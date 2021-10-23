@@ -31,7 +31,6 @@ import Chumps from "../data/chumps";
 const frontPageStyle = theme => ({
     header: {
         backgroundColor: '#fff5ee',
-        // height: '50px',
     },
     header_image:{
         width: '100%',

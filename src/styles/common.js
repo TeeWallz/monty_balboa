@@ -14,6 +14,8 @@ const commonStyle = theme => ({
         },
 
         sectionWidth: {
+            maxWidth: '400px',
+            width: '100%',
             [theme.breakpoints.up('xs')]: {
                 marginLeft: '10px',
                 marginRight: '10px',
@@ -21,20 +23,36 @@ const commonStyle = theme => ({
             [theme.breakpoints.up('md')]: {
                 'marginLeft': 'auto',
                 'marginRight': 'auto',
-                width: '800px',
+
             },
         },
+
         commonHeaderText: {
             fontSize: '5vw',
+
+            [theme.breakpoints.up('sm')]: {
+                fontSize: '1.5em',
+            },
         },
         commonBigText: {
-            fontSize: '4vw',
+            fontSize: '100%',
+            [theme.breakpoints.up('sm')]: {
+                fontSize: '100%',
+            },
         },
         commonRegularText: {
             fontSize: '3vw',
+
+            [theme.breakpoints.up('sm')]: {
+                fontSize: '0.5em',
+            },
         },
         commonSmallText: {
             fontSize: '2vw',
+
+            [theme.breakpoints.up('sm')]: {
+                fontSize: '0.2em',
+            },
         },
 });
 export default commonStyle;

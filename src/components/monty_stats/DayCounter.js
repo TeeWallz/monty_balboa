@@ -22,13 +22,13 @@ const styles = theme => ({
     flex: {
         flex: 1
     },
-    day_counter: {
-        fontSize: '8vw',
-    },
-    as_of_counter: {
-        fontSize: '2vw',
-    },
+    dayCounter: {
+        fontSize: '350%',
 
+        // [theme.breakpoints.up('sm')]: {
+        //     fontSize: '450%',
+        // },
+    }
 });
 
 class DayCounter extends Component {
@@ -39,8 +39,8 @@ class DayCounter extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
-                <div className={classNames(classes.day_counter)}>{chumps[0].streak}</div>
-                <div className={classNames(classes.commonRegularText)}>As of {format(chumps[0].parsedDate, 'do LLLL yyyy')}</div>
+                <div className={classNames(classes.dayCounter)}>{chumps[0].streak}</div>
+                <div className={classNames(classes.commonBigText)}>As of {format(chumps[0].parsedDate, 'do LLLL yyyy')}</div>
             </div>
         )
     }

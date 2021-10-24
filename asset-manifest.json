@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/monty_balboa/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/monty_balboa/static/js/main.9514877a.chunk.js",
-    "main.js.map": "/monty_balboa/static/js/main.9514877a.chunk.js.map",
+    "main.js": "/monty_balboa/static/js/main.2dc74d28.chunk.js",
+    "main.js.map": "/monty_balboa/static/js/main.2dc74d28.chunk.js.map",
     "runtime-main.js": "/monty_balboa/static/js/runtime-main.5204afb6.js",
     "runtime-main.js.map": "/monty_balboa/static/js/runtime-main.5204afb6.js.map",
     "static/css/2.eef00207.chunk.css": "/monty_balboa/static/css/2.eef00207.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.eef00207.chunk.css",
     "static/js/2.c9163077.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.9514877a.chunk.js"
+    "static/js/main.2dc74d28.chunk.js"
   ]
 }

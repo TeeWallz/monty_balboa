@@ -8,7 +8,7 @@ import MainLayout from "../components/common/layout/MainLayout";
 import FrontPage from "../layouts/FrontPage";
 
 const Router = () => (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
             <LayoutRoute  exact path="/" layout={MainLayout} component={FrontPage} />
         </Switch>

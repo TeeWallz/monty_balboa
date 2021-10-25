@@ -37,15 +37,10 @@ class StreakGraph extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
+                <div className={classNames(classes.commonHeaderText)}>Histogram of Streaks</div>
                 <VictoryChart
                     domainPadding={{ x: 20 }}
                 >
-                    <VictoryLabel
-                        x={225}
-                        y={25}
-                        textAnchor="middle"
-                        text="Histogram of Streaks"
-                    />
                     <VictoryLabel
                         x={225}
                         y={290}

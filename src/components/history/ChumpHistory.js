@@ -26,6 +26,9 @@ const styles = theme => ({
         minWidth: '20px!important',
         borderRadius: '4px',
         paddingRight: '22px',
+    },
+    historyTableRow: {
+        cursor:'pointer',
     }
 });
 
@@ -131,7 +134,7 @@ class ChumpHistory extends Component {
                                 data={tableData}
                                 columns={columns} bordered={ false }
                                 rowEvents={ this.rowEvents }
-                                rowClasses={ classes.commonRegularText } />
+                                rowClasses={ classNames(classes.commonRegularText, classes.historyTableRow) } />
                 <lightbox chumps={chumps}/>
             </div>
         )

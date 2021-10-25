@@ -13,7 +13,9 @@ import commonTheme from "../../../styles/common";
 import combineStyles from "../../../utils/combineStyles";
 import commonStyle from "../../../styles/common";
 
-import headerImage from '../../../images/MontyHeader.png'
+import images from "../../../images"
+console.log(images)
+// import headerImage from '../../../images/MontyHeader.png'
 
 
 const headerStyle = theme => ({
@@ -40,7 +42,7 @@ class Header extends Component {
 
         return (
             <div className={classNames(classes.sectionWidth)}>
-                <img className={classes.header_image} src={headerImage} />
+                <img className={classes.header_image} src={images['MontyHeader.png'].default} />
             </div>
         )
     }

@@ -51,7 +51,7 @@ const commonStyle = theme => ({
         fontSize: '2vw',
 
         [theme.breakpoints.up('sm')]: {
-            fontSize: '0.5em',
+            fontSize: '1em',
         },
     },
 });

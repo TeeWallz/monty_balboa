@@ -17,7 +17,7 @@ function Chumps(){
         singleChump['date_year'] = getYear( singleChump['parsedDate'] )
         singleChump['date_weekyear'] = getWeekYear( singleChump['parsedDate'] )
         singleChump['date_week'] = getWeek( singleChump['parsedDate'] )
-        singleChump['streak_max_proportion'] = Math.max(0.25, singleChump['streak'] / largestStreak)
+        singleChump['streak_max_proportion'] = Math.max(0.3, singleChump['streak'] / largestStreak)
         // singleChump['streak_max_proportion'] = 1
     }, rawChumps); // use arr as this
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Header from "./Header";
+import Footer from "./Footer";
 
 
 // Import custom components
@@ -60,10 +61,8 @@ const MainLayout = (props) => {
         <div className={classes.root}>
             <div className={classes.appFrame}>
                 <Header/>
-                {/*<Header navDrawerOpen={open} handleToggleDrawer={handleToggle} />*/}
-                {/*<MiniDrawer navDrawerOpen={open} />*/}
-                {/*<main className={classes.content} >{children}</main>*/}
                 {children}
+                <Footer/>
             </div>
             {/*<Footer />*/}
         </div>

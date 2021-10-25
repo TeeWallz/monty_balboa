@@ -38,7 +38,8 @@ const styles = theme => ({
         marginRight: '8px',
         // minWidth: '40px',
         fontSize: '2.5vw',
-        width: '3em'
+        width: '420px',
+        maxWidth: '3em',
     },
     hitList: {
         flexWrap: 'wrap',
@@ -75,7 +76,7 @@ const localStyle = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        fontSize: '0.8em'
+        fontSize: '2em'
     }
 }
 
@@ -130,7 +131,11 @@ class HitBoxChart extends Component {
 
         const rows = years.map(year => (
             <div className={classes.chartRow}>
-                <div className={classNames(classes.year, classes.commonBigText)}>{year}</div>
+                <div className={classNames(classes.year, classes.commonBigText)}
+
+                >
+                    {year}
+                </div>
 
                 <div className={classes.hitList}>
                     {

@@ -12,9 +12,8 @@ import IconButton from '@material-ui/core/IconButton';
 import commonTheme from "../../../styles/common";
 import combineStyles from "../../../utils/combineStyles";
 import commonStyle from "../../../styles/common";
-// import MenuIcon from '@material-ui/icons/Menu';
 
-// import * as authService from '../../../services/authService';
+import headerImage from '../../../images/MontyHeader.png'
 
 
 const headerStyle = theme => ({
@@ -41,7 +40,7 @@ class Header extends Component {
 
         return (
             <div className={classNames(classes.sectionWidth)}>
-                <img className={classes.header_image} src={"https://howmanydayssincemontaguestreetbridgehasbeenhit.com/static/img/monty_header.png"} />
+                <img className={classes.header_image} src={headerImage} />
             </div>
         )
     }

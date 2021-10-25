@@ -97,9 +97,6 @@ class FrontPage extends Component {
                 <HitBoxChart setLightboxData={this.setLightboxData}/>
                 <StreakGraph />
                 <CommentsContainer />
-                {/*<Current Image*/}
-                {/*<Data (Graph, history, average)*/}
-                {/*<Comments*/}
             </React.Fragment>
 
         )

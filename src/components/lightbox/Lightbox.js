@@ -10,7 +10,7 @@ const images = [
 
 const customStyles = {
     content: {
-        fontSize: '0.5em',
+        fontSize: '1em',
     },
 };
 

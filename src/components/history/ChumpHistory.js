@@ -22,10 +22,10 @@ const styles = theme => ({
         backgroundColor: 'red',
         fontWeight: 700,
         textAlign: 'right',
-        paddingRight: '8px',
         paddingLeft: '6px',
         minWidth: '20px!important',
         borderRadius: '4px',
+        paddingRight: '22px',
     }
 });
 
@@ -125,7 +125,7 @@ class ChumpHistory extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
-                <div className={classNames(classes.commonHeaderText)}>History (Think of funny thing)</div>
+                <div className={classNames(classes.commonHeaderText)}>History</div>
 
                 <BootstrapTable keyField='id'
                                 data={tableData}

@@ -74,3 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Github pages
 https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 
+public/CNAME

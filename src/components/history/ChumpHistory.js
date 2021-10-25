@@ -15,54 +15,19 @@ import boutsByYearWeek from "../../data/boutsByYearWeek";
 
 
 const styles = theme => ({
-
-});
-
-const products = [{id: 1, name: 'yeet', price: 1}];
-const columns = [
-    {
-        dataField: 'date_aus_string',
-        text: 'Date',
-        sortValue: (cell, row) => parse(cell, 'dd/MM/yyyy'),
-        sort: true,
-        headerStyle: {
-            fontSize: '0.5em',
-            width: '8em',
-            textAlign: 'center',
-        },
-        style: {
-            fontSize: '0.5em',
-            width: '8em',
-            textAlign: 'center',
-        },
-    },
-    {
-        dataField: 'name',
-        text: 'Chump',
-        sort: true,
-        headerStyle: {
-            fontSize: '0.5em'
-        },
-        style: {
-            fontSize: '0.5em'
-        },
-    },
-    {
-        text: 'Image',
-        dataField: 'image',
-        headerStyle: {
-            fontSize: '0.5em',
-            width: '8em',
-            textAlign: 'center',
-        },
-        style: {
-            fontSize: '0.5em',
-            width: '8em',
-            textAlign: 'center',
-        },
-
+    streakBar: {
+        paddingTop: '2px',
+        paddingBottom: '2px',
+        color: '#fff',
+        backgroundColor: 'red',
+        fontWeight: 700,
+        textAlign: 'right',
+        paddingRight: '8px',
+        paddingLeft: '6px',
+        minWidth: '20px!important',
+        borderRadius: '4px',
     }
-];
+});
 
 
 class ChumpHistory extends Component {
@@ -87,26 +52,62 @@ class ChumpHistory extends Component {
         const {lightbox} = this.props;
         const chumps = Chumps()
 
-        const rows = chumps.map((_, i) => {
-            let kek = 1;
-            // console.log(chumps[i])
-            return (
-                <tr>
-                    <td className={classNames(classes.commonRegularText)}>{format(chumps[i].parsedDate, 'dd/MM/yyyy')}</td>
-                    <td className={classNames(classes.commonRegularText)}>{chumps[i].streak}</td>
-                    <td className={classNames(classes.commonSmallText)}>
-                        <a href={chumps[i].chumps[0].url} target={"_blank"}>
-                            {chumps[i].chumps[0].name}
-                        </a>
-                    </td>
-                    <td className={classNames(classes.commonSmallText)}
-                        style={{cursor: 'pointer'}}
-                        onClick={() => this.props.setLightboxData({lightboxIsOpen: true, lightboxCurrentChumpId: i})}
-                    >🮥
-                    </td>
-                </tr>
-            )
-        });
+        const columns = [
+            {
+                dataField: 'date_aus_string',
+                text: 'Date',
+                sortValue: (cell, row) => {
+                    return format(parse(cell, "dd/MM/yyyy", new Date()), 'yyyy-MM-dd')
+                },
+                sort: true,
+                headerStyle: {
+                    width: '8em',
+                    textAlign: 'center',
+                },
+                style: {
+                    width: '8em',
+                    textAlign: 'center',
+                },
+            },
+            {
+                dataField: 'name',
+                text: 'Chump',
+                sort: true,
+            },
+            {
+                dataField: 'streak_yeet',
+                text: 'Streak',
+                sort: true,
+                classes: classes.streakBar,
+                sortValue: (cell, row) => {
+                    return cell[0]
+                },
+                formatter: (cell, row, rowIndex, formatExtraData) => {
+                    console.log(cell[1]);
+                    return (
+                        <div className={classes.streakBar} style={{width:cell[1]*100 + '%'}}>
+                            {cell[0]}
+                        </div>
+                    )
+                }
+            },
+            {
+                text: 'Image',
+                dataField: 'image',
+                headerStyle: {
+                    width: '8em',
+                    textAlign: 'center',
+                },
+                style: {
+                    fontSize: '0.5em',
+                    width: '8em',
+                    textAlign: 'center',
+                },
+
+            }
+        ];
+
+
 
         const tableData = chumps.map((_, i) => {
             return {
@@ -115,6 +116,9 @@ class ChumpHistory extends Component {
                 date: chumps[i].date,
                 name: chumps[i].chumps[0].name,
                 url: chumps[i].chumps[0].url,
+                streak: chumps[i].streak,
+                streak_max_proportion: chumps[i].streak_max_proportion,
+                streak_yeet: [chumps[i].streak, chumps[i].streak_max_proportion],
                 image: '🮥',
             }
         });
@@ -122,24 +126,12 @@ class ChumpHistory extends Component {
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
                 <div className={classNames(classes.commonHeaderText)}>History (Think of funny thing)</div>
-                {/*<Table className={classNames(classes.historyTable, classes.commonRegularText)}>*/}
-                {/*    <thead>*/}
-                {/*    <tr>*/}
-                {/*        <td>Date</td>*/}
-                {/*        <td>Streak</td>*/}
-                {/*        <td>"""winner"""</td>*/}
-                {/*        <td>Image</td>*/}
-                {/*    </tr>*/}
-                {/*    </thead>*/}
-                {/*    <tbody>*/}
-                {/*    {rows}*/}
-                {/*    </tbody>*/}
 
-                {/*</Table>*/}
                 <BootstrapTable keyField='id'
                                 data={tableData}
                                 columns={columns} bordered={ false }
-                                rowEvents={ this.rowEvents }/>
+                                rowEvents={ this.rowEvents }
+                                rowClasses={ classes.commonRegularText } />
                 <lightbox chumps={chumps}/>
             </div>
         )

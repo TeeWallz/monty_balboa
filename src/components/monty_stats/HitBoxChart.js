@@ -38,6 +38,7 @@ const styles = theme => ({
         marginRight: '8px',
         // minWidth: '40px',
         fontSize: '2.5vw',
+        width: '3em'
     },
     hitList: {
         flexWrap: 'wrap',
@@ -129,9 +130,6 @@ class HitBoxChart extends Component {
 
         const rows = years.map(year => (
             <div className={classes.chartRow}>
-                <ReactTooltip id="registerTip" place="top" effect="solid" getContent={this.getPopupData}>
-                </ReactTooltip>
-
                 <div className={classNames(classes.year, classes.commonBigText)}>{year}</div>
 
                 <div className={classes.hitList}>
@@ -163,6 +161,9 @@ class HitBoxChart extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
+                <div className={classNames(classes.commonHeaderText)}>
+                    Streak Calendar
+                </div>
                 <div className={'rows'}>
                     <div className={classes.chartRows}>
                         {rows}
@@ -171,6 +172,8 @@ class HitBoxChart extends Component {
                 <div className={classNames(classes.commonSmallText)} style={{textAlign: 'right', width: '100%'}}>
                     Legend for colours here. Make boxes clickable/hoverable?
                 </div>
+                <ReactTooltip id="registerTip" place="top" effect="solid" getContent={this.getPopupData}>
+                </ReactTooltip>
             </div>
         )
 

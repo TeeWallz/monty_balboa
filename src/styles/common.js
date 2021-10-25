@@ -1,59 +1,59 @@
 
 const commonStyle = theme => ({
-        section: {
-            // background-color: var(--section-bg-color);
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginLeft: '8px',
-            marginRight: '8px',
-            padding: '8px',
-            boxShadow: '2px 2px 2px 2px rgba(170, 170, 170, 0.67)',
-            marginBottom: '8px',
-            backgroundColor: '#FFF',
+    section: {
+        // background-color: var(--section-bg-color);
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginLeft: '8px',
+        marginRight: '8px',
+        padding: '8px',
+        boxShadow: '2px 2px 2px 2px rgba(170, 170, 170, 0.67)',
+        marginBottom: '8px',
+        backgroundColor: '#FFF',
+    },
+
+    sectionWidth: {
+        maxWidth: '600px',
+        width: '100%',
+        [theme.breakpoints.up('xs')]: {
+            marginLeft: '10px',
+            marginRight: '10px',
         },
+        [theme.breakpoints.up('md')]: {
+            'marginLeft': 'auto',
+            'marginRight': 'auto',
 
-        sectionWidth: {
-            maxWidth: '400px',
-            width: '100%',
-            [theme.breakpoints.up('xs')]: {
-                marginLeft: '10px',
-                marginRight: '10px',
-            },
-            [theme.breakpoints.up('md')]: {
-                'marginLeft': 'auto',
-                'marginRight': 'auto',
-
-            },
         },
+    },
 
-        commonHeaderText: {
-            fontSize: '5vw',
+    commonHeaderText: {
+        fontSize: '5vw',
 
-            [theme.breakpoints.up('sm')]: {
-                fontSize: '1.5em',
-            },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.5em',
         },
-        commonBigText: {
+    },
+    commonBigText: {
+        fontSize: '100%',
+        [theme.breakpoints.up('sm')]: {
             fontSize: '100%',
-            [theme.breakpoints.up('sm')]: {
-                fontSize: '100%',
-            },
         },
-        commonRegularText: {
-            fontSize: '3vw',
+    },
+    commonRegularText: {
+        fontSize: '3vw',
 
-            [theme.breakpoints.up('sm')]: {
-                fontSize: '0.5em',
-            },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1em',
         },
-        commonSmallText: {
-            fontSize: '2vw',
+    },
+    commonSmallText: {
+        fontSize: '2vw',
 
-            [theme.breakpoints.up('sm')]: {
-                fontSize: '0.2em',
-            },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '0.5em',
         },
+    },
 });
 export default commonStyle;
 

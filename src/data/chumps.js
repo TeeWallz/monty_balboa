@@ -1,5 +1,7 @@
 import {format, compareAsc, parse, parseISO, getWeekYear, getWeek, getYear, differenceInDays} from 'date-fns'
 import chumpsRawData from './chumps.json'
+import images from "../images";
+
 
 function loadRawChumps(){
     return chumpsRawData;
@@ -9,6 +11,7 @@ function Chumps(){
     let rawChumps = loadRawChumps()
 
     const largestStreak = Math.max.apply(Math, rawChumps.map(function(bout) { return bout.streak; }))
+    console.log(images)
 
     rawChumps.forEach(function(singleChump, index) {
         singleChump['idx'] = index
@@ -18,6 +21,9 @@ function Chumps(){
         singleChump['date_weekyear'] = getWeekYear( singleChump['parsedDate'] )
         singleChump['date_week'] = getWeek( singleChump['parsedDate'] )
         singleChump['streak_max_proportion'] = Math.max(0.3, singleChump['streak'] / largestStreak)
+        console.log(singleChump['date'])
+        singleChump['local_image'] = images[singleChump['date'] + '.jpg'].default
+
         // singleChump['streak_max_proportion'] = 1
     }, rawChumps); // use arr as this
 

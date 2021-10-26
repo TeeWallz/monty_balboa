@@ -9,6 +9,7 @@ import { differenceInDays, format } from 'date-fns'
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
+import images from "../../images";
 
 
 const styles = theme => ({
@@ -24,11 +25,24 @@ const styles = theme => ({
     },
     dayCounter: {
         fontSize: '350%',
-
+        textAlign: 'center',
+        height: '100px',
         // [theme.breakpoints.up('sm')]: {
         //     fontSize: '450%',
         // },
-    }
+    },
+    wreath: {
+        position: 'absolute',
+        width: '130px',
+        left: 0,
+        right: 0,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        transform: 'scaleX(1.3)'
+    },
+    dayCounterWrapper:{
+        width: '40%',
+    },
 });
 
 class DayCounter extends Component {
@@ -39,7 +53,11 @@ class DayCounter extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
-                <div className={classNames(classes.dayCounter)}>{chumps[0].streak}</div>
+                <div className={classNames(classes.dayCounterWrapper)}>
+                    <img className={classNames(classes.wreath)} src={images['wreath.png'].default} />
+                    <div className={classNames(classes.dayCounter)}>{chumps[0].streak}</div>
+                </div>
+
                 <div className={classNames(classes.commonBigText)}>As of {format(chumps[0].parsedDate, 'do LLLL yyyy')}</div>
             </div>
         )

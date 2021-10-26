@@ -19,7 +19,7 @@ const styles = theme => ({
         paddingTop: '2px',
         paddingBottom: '2px',
         color: '#fff',
-        backgroundColor: 'red',
+        backgroundColor: 'salmon',
         fontWeight: 700,
         textAlign: 'right',
         paddingLeft: '6px',

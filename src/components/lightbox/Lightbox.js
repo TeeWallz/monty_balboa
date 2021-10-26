@@ -3,10 +3,6 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import Chumps from "../../data/chumps"; // This only needs to be imported once in your app
 
-const images = [
-    'https://frontend-collective.github.io/react-image-lightbox/1.0d2c9d24.jpg',
-    'https://frontend-collective.github.io/react-image-lightbox/2.a8dae120.jpg',
-];
 
 const customStyles = {
     content: {
@@ -21,10 +17,6 @@ export default class LightboxExample extends Component {
 
         this.state = {
             bouts: chumps,
-            // photoIndex: 0,
-            // // isOpen: false,
-            // // imageTitle: '11010\n' + this.props.chumps[0].chumps[0].name,
-            // imageTitle: chumps[0].date + " - " + chumps[0].chumps[0].name,
         };
     }
 
@@ -41,9 +33,9 @@ export default class LightboxExample extends Component {
                 {isOpen && (
                     <Lightbox
                         reactModalStyle={customStyles}
-                        mainSrc={this.state.bouts[photoIndex].chumps[0].image}
-                        nextSrc={this.state.bouts[(photoIndex + 1) % this.state.bouts.length].chumps[0].image}
-                        prevSrc={this.state.bouts[(photoIndex + this.state.bouts.length - 1) % this.state.bouts.length].chumps[0].image}
+                        mainSrc={this.state.bouts[photoIndex].local_image}
+                        nextSrc={this.state.bouts[(photoIndex + 1) % this.state.bouts.length].local_image}
+                        prevSrc={this.state.bouts[(photoIndex + this.state.bouts.length - 1) % this.state.bouts.length].local_image}
                         onCloseRequest={() => this.props.setLightboxData({lightboxIsOpen: false})}
                         imageTitle={this.props.lightboxTitle(photoIndex)}
                         onMovePrevRequest={() => {

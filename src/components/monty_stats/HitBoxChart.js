@@ -20,7 +20,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 const styles = theme => ({
     chartRows: {},
     chartRow: {
-
+        marginBottom: '7px',
         flexWrap: 'nowrap',
         marginTop: 0,
         flexDirection: 'row',

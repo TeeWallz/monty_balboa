@@ -19,7 +19,7 @@ class Footer extends Component {
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
                 <div>
-                    Redesign heavily inspired by 
+                    <span>Redesign heavily inspired by </span>
                     <a href={"https://hiatus-hiatus.github.io/"}>
                         https://hiatus-hiatus.github.io/
                     </a>

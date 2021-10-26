@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import HTMLComment from 'react-html-comment';
+
 import Header from "./Header";
 import Footer from "./Footer";
+import FunnyHtmlComment from "./FunnyComment";
 
 
 // Import custom components
@@ -59,6 +62,7 @@ const MainLayout = (props) => {
 
     return (
         <div className={classes.root}>
+            <FunnyHtmlComment />
             <div className={classes.appFrame}>
                 <Header/>
                 {children}

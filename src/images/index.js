@@ -5,7 +5,7 @@ const importAll = require =>
     }, {});
 
 const images = importAll(
-    require.context("./", false, /\.(png|jpe?g|svg)$/)
+    require.context("./", false, /\.(png|jpe?g|svg|gif)$/)
 );
 
 

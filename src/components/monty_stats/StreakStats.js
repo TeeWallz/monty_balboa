@@ -2,15 +2,14 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Table from 'react-bootstrap/Table'
-import {getYear} from "date-fns";
 import {withStyles} from '@material-ui/core/styles';
 
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
-
 import {median} from "../../utils/Maths";
 import skewness from "../../utils/Skewness";
+import images from "../../images";
 
 
 const styles = theme => ({
@@ -19,7 +18,22 @@ const styles = theme => ({
     },
     textAlignRight:{
         textAlign: 'right',
+    },
+    statsWrapper:{
+        display: 'flex'
+    },
+    statsImageDiv:{
+        width: '100px',
+        alignItems: 'center',
+        display: 'flex',
+    },
+    statsImage:{
+        width:'100%',
+    },
+    statsActualStatus:{
+
     }
+
 });
 
 const averageExpectingGateDays = 15;
@@ -67,16 +81,29 @@ class StreakStats extends Component {
         const setSkewness = skewness(streakArray).toFixed(2);
 
         return (
-            <div >
-                <Table className={classes.commonRegularText}>
-                    <tbody>
-                        <tr><td className={classNames(classes.textAlignRight)}>Average Streak:</td><td>{averageStreak} days</td></tr>
-                        <tr><td className={classNames(classes.textAlignRight)}>Median Streak:</td><td>{medianStreak} days</td></tr>
-                        <tr><td className={classNames(classes.textAlignRight)}>Standard Deviation:</td><td>{stdDev} days</td></tr>
-                        <tr><td className={classNames(classes.textAlignRight)}>Skewness:</td><td>{setSkewness}</td></tr>
-                        <tr><td className={classNames(classes.textAlignRight)}>Current Status:</td><td>{streakStatus}</td></tr>
-                    </tbody>
-                </Table>
+            <div className={classNames(classes.statsWrapper)}>
+                <div className={classNames(classes.statsImageDiv)}>
+                    <img className={classNames(classes.statsImage)}
+                         src={images['m_monster_scribbling_notes_md_nwm_v2.gif'].default}
+                    />
+                </div>
+                <div >
+                    <Table className={classes.commonRegularText}>
+                        <tbody>
+                            <tr><td className={classNames(classes.textAlignRight)}>Average Streak:</td><td>{averageStreak} days</td></tr>
+                            <tr><td className={classNames(classes.textAlignRight)}>Median Streak:</td><td>{medianStreak} days</td></tr>
+                            <tr><td className={classNames(classes.textAlignRight)}>Standard Deviation:</td><td>{stdDev} days</td></tr>
+                            <tr><td className={classNames(classes.textAlignRight)}>Skewness:</td><td>{setSkewness}</td></tr>
+                            <tr><td className={classNames(classes.textAlignRight)}>Current Status:</td><td>{streakStatus}</td></tr>
+                        </tbody>
+                    </Table>
+                </div>
+                <div className={classNames(classes.statsImageDiv)}>
+                    <img className={classNames(classes.statsImage)}
+                         src={images['mad_scientist_with_clipboard_anim_300_wht.gif'].default}
+                         style={{transform: 'scaleX(-1)', WebkitTransform: 'scaleX(-1)'}}
+                    />
+                </div>
             </div>
         )
     }

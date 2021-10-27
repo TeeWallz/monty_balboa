@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter, Switch} from 'react-router-dom';
 
 
 import LayoutRoute from "./LayoutRoute";
-import NotFound from "../components/error/NotFound";
+// import NotFound from "../components/error/NotFound";
 import MainLayout from "../components/common/layout/MainLayout";
 import FrontPage from "../layouts/FrontPage";
 

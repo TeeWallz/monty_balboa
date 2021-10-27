@@ -1,4 +1,4 @@
-import { eachWeekOfInterval, getYear, getWeekYear, getWeek} from 'date-fns'
+import { eachWeekOfInterval, getYear, getWeek} from 'date-fns'
 import Chumps from "./chumps";
 
 

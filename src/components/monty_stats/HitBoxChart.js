@@ -2,19 +2,13 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
-import Popup from 'reactjs-popup';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import ReactTooltip from "react-tooltip";
 
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
-import chumps from "../../data/chumps.json";
-import Chumps from "../../data/chumps";
 import boutsByYearWeek from "../../data/boutsByYearWeek";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Button from "@material-ui/core/Button";
-import Tooltip from "@material-ui/core/Tooltip";
 
 
 const styles = theme => ({

@@ -61,7 +61,7 @@ const styles = theme => ({
     candle:{
         position: 'absolute',
         width: '40%',
-        top: '70%',
+        top: '59%',
         zIndex: 100,
     },
     candleLeft: {

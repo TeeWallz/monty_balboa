@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-// import {bindActionCreators} from 'redux'
-// import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
 
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
-import StreakGraph from "./StreakGraph";
 import StreakStats from "./StreakStats";
 
 

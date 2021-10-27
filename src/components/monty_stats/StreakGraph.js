@@ -16,24 +16,11 @@ const styles = theme => ({
     },
 });
 
-const sampleHistogramData = [
-    { x: 0 },
-    { x: 1 },
-    { x: 1 },
-    { x: 2 },
-    { x: 3 },
-    { x: 4 },
-    { x: 4 }
-]
-
 class StreakGraph extends Component {
 
     render() {
         const {classes} = this.props;
         const chumps = Chumps();
-        // const streakArray = chumps.map(e => x: e.streak});
-        const streakArray = chumps.map(chump => ({ x: chump.streak }));
-
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
@@ -49,7 +36,7 @@ class StreakGraph extends Component {
                     />
                     <VictoryHistogram
                         style={{
-                            // data: { fill: "#c43a31" }
+                            data: { fill: "#DACFBB" }
                         }}
                         cornerRadius={5}
                         x = "streak"

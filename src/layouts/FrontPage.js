@@ -2,18 +2,9 @@ import React, {Component} from 'react';
 // import {bindActionCreators} from 'redux'
 // import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import DayCounter from "../components/monty_stats/DayCounter";
-// import MenuIcon from '@material-ui/icons/Menu';
 
-// import * as authService from '../../../services/authService';
-import applyCommonTheme from "../styles/common";
+import DayCounter from "../components/monty_stats/DayCounter";
 import combineStyles from "../utils/combineStyles";
 import commonStyle from "../styles/common";
 import CurrentChump from "../components/monty_stats/CurrentChump";
@@ -24,9 +15,6 @@ import HitBoxChart from "../components/monty_stats/HitBoxChart";
 import StreakGraph from "../components/monty_stats/StreakGraph";
 import LightboxExample from "../components/lightbox/Lightbox";
 import Chumps from "../data/chumps";
-// console.log(theme_common)
-
-
 
 const frontPageStyle = theme => ({
     header: {
@@ -71,10 +59,6 @@ class FrontPage extends Component {
             }
             state.lightboxCurrentChumpId = chumpId;
         }
-
-
-        console.log("Setting state")
-        console.log(state)
         this.setState(state)
     }
 

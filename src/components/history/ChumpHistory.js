@@ -19,13 +19,14 @@ const styles = theme => ({
         paddingTop: '2px',
         paddingBottom: '2px',
         color: '#fff',
-        backgroundColor: 'salmon',
+        backgroundColor: '#DACFBB',
         fontWeight: 700,
         textAlign: 'right',
-        paddingLeft: '6px',
+        paddingLeft: '3px',
         minWidth: '20px!important',
         borderRadius: '4px',
-        paddingRight: '22px',
+        paddingRight: '6px',
+        fontSize: '0.9em',
     },
     historyTableRow: {
         cursor:'pointer',
@@ -86,7 +87,6 @@ class ChumpHistory extends Component {
                     return cell[0]
                 },
                 formatter: (cell, row, rowIndex, formatExtraData) => {
-                    console.log(cell[1]);
                     return (
                         <div className={classes.streakBar} style={{width:cell[1]*100 + '%'}}>
                             {cell[0]}
@@ -98,12 +98,12 @@ class ChumpHistory extends Component {
                 text: 'Image',
                 dataField: 'image',
                 headerStyle: {
-                    width: '8em',
+                    width: '4em',
                     textAlign: 'center',
                 },
                 style: {
-                    fontSize: '0.5em',
-                    width: '8em',
+                    fontSize: '2em',
+                    width: '4em',
                     textAlign: 'center',
                 },
 
@@ -122,7 +122,7 @@ class ChumpHistory extends Component {
                 streak: chumps[i].streak,
                 streak_max_proportion: chumps[i].streak_max_proportion,
                 streak_yeet: [chumps[i].streak, chumps[i].streak_max_proportion],
-                image: '🮥',
+                image: '>',
             }
         });
 
@@ -134,8 +134,9 @@ class ChumpHistory extends Component {
                                 data={tableData}
                                 columns={columns} bordered={ false }
                                 rowEvents={ this.rowEvents }
-                                rowClasses={ classNames(classes.commonRegularText, classes.historyTableRow) } />
-                <lightbox chumps={chumps}/>
+                                rowClasses={ classNames(classes.commonRegularText, classes.historyTableRow) }
+                                keyField={"date"}
+                />
             </div>
         )
     }

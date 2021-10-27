@@ -168,9 +168,9 @@ class HitBoxChart extends Component {
                         {rows}
                     </div>
                 </div>
-                <div className={classNames(classes.commonSmallText)} style={{textAlign: 'right', width: '100%'}}>
-                    Legend for colours here. Make boxes clickable/hoverable?
-                </div>
+                {/*<div className={classNames(classes.commonSmallText)} style={{textAlign: 'right', width: '100%'}}>*/}
+                {/*    Legend for colours here. Make boxes clickable/hoverable?*/}
+                {/*</div>*/}
                 <ReactTooltip id="registerTip" place="top" effect="solid" getContent={this.getPopupData}>
                 </ReactTooltip>
             </div>

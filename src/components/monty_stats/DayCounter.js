@@ -53,6 +53,9 @@ class DayCounter extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
+                <img src={images['FRboxing.gif'].default}  style={{position: 'absolute', marginRight: '245px'}}
+                />
+
                 <div className={classNames(classes.dayCounterWrapper)}>
                     <img className={classNames(classes.wreath)} src={images['wreath.png'].default} />
                     <div className={classNames(classes.dayCounter)}>{chumps[0].streak}</div>

@@ -12,6 +12,7 @@ import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
 import boutsByYearWeek from "../../data/boutsByYearWeek";
+import images from "../../images";
 
 
 const styles = theme => ({
@@ -128,8 +129,8 @@ class ChumpHistory extends Component {
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
-                <div className={classNames(classes.commonHeaderText)}>History</div>
-
+                {/*<div className={classNames(classes.commonHeaderText)}>History</div>*/}
+                <img src={images['rainhistory.gif'].default} />
                 <BootstrapTable keyField='id'
                                 data={tableData}
                                 columns={columns} bordered={ false }

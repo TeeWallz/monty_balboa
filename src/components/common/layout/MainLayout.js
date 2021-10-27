@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import HTMLComment from 'react-html-comment';
-import ReactGA from 'react-ga';
+import DocumentMeta from 'react-document-meta';
 
 import Header from "./Header";
 import Footer from "./Footer";
 import FunnyHtmlComment from "./FunnyComment";
-
-
-// Import custom components
-// import Header from '../header/Header';
-// import MiniDrawer from '../drawer/MiniDrawer';
-// import Footer from '../footer/Footer';
+import Chumps from "../../../data/chumps";
 
 
 const styles = (theme) => ({
@@ -55,6 +49,24 @@ const styles = (theme) => ({
 
 });
 
+const bouts = Chumps();
+const age = bouts[0].streak;
+const date = bouts[0].date_aus_string;
+const days_str = (age == 1) ? 'day' : 'days';
+const description = `Tracking lost fights against the Montague Street Bridge. Latest bout ${age} ${days_str} ago on ${date}`;
+
+const meta = {
+    title: 'How Many Days Since The Montague Street Bridge Has Been Hit?',
+    description: description,
+    canonical: 'https://howmanydayssincemontaguestreetbridgehasbeenhit.com/',
+    meta: {
+        charset: 'utf-8',
+        name: {
+            keywords: 'Montague Street Bridge how many days bus truck how many days since montague street bridge has been hit'
+        }
+    }
+}
+
 const MainLayout = (props) => {
     const { classes, children } = props;
     // const [open, setOpen] = useState(true);
@@ -63,6 +75,7 @@ const MainLayout = (props) => {
 
     return (
         <div className={classes.root}>
+            <DocumentMeta {...meta} />
             <FunnyHtmlComment />
             <div className={classes.appFrame}>
                 <Header/>

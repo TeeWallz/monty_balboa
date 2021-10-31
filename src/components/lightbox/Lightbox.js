@@ -33,9 +33,9 @@ export default class LightboxExample extends Component {
                 {isOpen && (
                     <Lightbox
                         reactModalStyle={customStyles}
-                        mainSrc={this.state.bouts[photoIndex].local_image}
-                        nextSrc={this.state.bouts[(photoIndex + 1) % this.state.bouts.length].local_image}
-                        prevSrc={this.state.bouts[(photoIndex + this.state.bouts.length - 1) % this.state.bouts.length].local_image}
+                        mainSrc={this.state.bouts[photoIndex].image}
+                        nextSrc={this.state.bouts[(photoIndex + 1) % this.state.bouts.length].image}
+                        prevSrc={this.state.bouts[(photoIndex + this.state.bouts.length - 1) % this.state.bouts.length].image}
                         onCloseRequest={() => this.props.setLightboxData({lightboxIsOpen: false})}
                         imageTitle={this.props.lightboxTitle(photoIndex)}
                         onMovePrevRequest={() => {

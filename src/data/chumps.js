@@ -2,7 +2,6 @@ import {format, parse, getWeekYear, getWeek, getYear, differenceInDays} from 'da
 import chumpsRawData from './chumps.json'
 import images from "../images";
 
-
 function loadRawChumps(){
     return chumpsRawData;
 }
@@ -15,17 +14,14 @@ function Chumps(){
     rawChumps.forEach(function(singleChump, index) {
         singleChump['idx'] = index
         singleChump['parsedDate'] = parse( singleChump['date'], 'yyyy-MM-dd', new Date() )
-        singleChump['date_aus_string'] = format(singleChump['parsedDate'], 'dd/MM/yyyy')
-        singleChump['date_year'] = getYear( singleChump['parsedDate'] )
         singleChump['date_weekyear'] = getWeekYear( singleChump['parsedDate'] )
-        singleChump['date_week'] = getWeek( singleChump['parsedDate'] )
         singleChump['streak_max_proportion'] = Math.max(0.1, singleChump['streak'] / largestStreak)
 
         const additionAmount =  Math.round((largestStreak - singleChump['streak']) * 0.1)
         const finalAmount =  singleChump['streak'] + additionAmount
         singleChump['streak_max_proportion'] = finalAmount / largestStreak
 
-        singleChump['local_image'] = images[singleChump['date'] + '.jpg'].default
+        singleChump['local_image'] = window.location.origin + images[singleChump['date'] + '.jpg'].default
         // singleChump['streak_max_proportion'] = 1
     }, rawChumps); // use arr as this
 

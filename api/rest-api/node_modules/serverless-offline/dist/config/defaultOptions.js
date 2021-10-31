@@ -1,0 +1,45 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _index = require("../utils/index.js");
+
+var _default = {
+  allowCache: false,
+  apiKey: (0, _index.createApiKey)(),
+  corsAllowCredentials: true,
+  // TODO no CLI option
+  corsAllowHeaders: 'accept,content-type,x-api-key,authorization',
+  corsAllowOrigin: '*',
+  corsExposedHeaders: 'WWW-Authenticate,Server-Authorization',
+  disableCookieValidation: false,
+  dockerHost: 'localhost',
+  dockerHostServicePath: null,
+  dockerNetwork: null,
+  dockerReadOnly: true,
+  enforceSecureCookies: false,
+  functionCleanupIdleTimeSeconds: 60,
+  hideStackTraces: false,
+  host: 'localhost',
+  httpPort: 3000,
+  httpsProtocol: '',
+  lambdaPort: 3002,
+  layersDir: null,
+  noAuth: false,
+  noPrependStageInUrl: false,
+  noStripTrailingSlashInUrl: false,
+  noTimeout: false,
+  prefix: '',
+  printOutput: false,
+  resourceRoutes: false,
+  useChildProcesses: false,
+  useDocker: false,
+  useWorkerThreads: false,
+  webSocketHardTimeout: 7200,
+  webSocketIdleTimeout: 600,
+  websocketPort: 3001
+};
+exports.default = _default;

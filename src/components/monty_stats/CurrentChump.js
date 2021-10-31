@@ -90,19 +90,19 @@ class CurrentChump extends Component {
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
                 <div className={classes.commonHeaderText}>
-                    Current ''''<span><img src={images['championredflaming2.gif'].default} /></span>''''
+                    Current ''''<span><img src={'/images/championredflaming2.gif'} /></span>''''
                 </div>
                 <div className={classes.chumpImageFrame}>
                     <div className={classes.chumpImageContainer}>
-                        <img className={classes.frameRibbon} src={images['ribbon.png'].default}/>
-                        <img className={classes.chumpImage} src={chumps[0].local_image}/>
+                        <img className={classes.frameRibbon} src={'/images/ribbon.png'}/>
+                        <img className={classes.chumpImage} src={chumps[0].image}/>
                     </div>
 
                     <img className={classNames(classes.candle, classes.candleLeft)}
-                         src={images['candle.gif'].default}
+                         src={'/images/candle.gif'}
                     />
                     <img className={classNames(classes.candle, classes.candleRight)}
-                         src={images['candle.gif'].default}
+                         src={'/images/candle.gif'}
                     />
                     {/*<div className={classNames(classes.frameRibbon)}></div>*/}
 

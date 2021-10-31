@@ -130,7 +130,7 @@ class ChumpHistory extends Component {
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
                 {/*<div className={classNames(classes.commonHeaderText)}>History</div>*/}
-                <img src={images['rainhistory.gif'].default} />
+                <img src={'/images/rainhistory.gif'} />
                 <BootstrapTable keyField='id'
                                 data={tableData}
                                 columns={columns} bordered={ false }

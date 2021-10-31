@@ -8,5 +8,9 @@ const images = importAll(
     require.context("./", false, /\.(png|jpe?g|svg|gif)$/)
 );
 
+// To heck with images hashes maaan
+for (const key of Object.keys(images)) {
+    // console.log(key + " -> " + images[key])
+}
 
 export default images

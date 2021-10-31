@@ -1,0 +1,1 @@
+    sls offline start --skipCacheInvalidation

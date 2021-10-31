@@ -84,7 +84,7 @@ class StreakStats extends Component {
             <div className={classNames(classes.statsWrapper)}>
                 <div className={classNames(classes.statsImageDiv)}>
                     <img className={classNames(classes.statsImage)}
-                         src={images['m_monster_scribbling_notes_md_nwm_v2.gif'].default}
+                         src={'/images/m_monster_scribbling_notes_md_nwm_v2.gif'}
                     />
                 </div>
                 <div >
@@ -100,7 +100,7 @@ class StreakStats extends Component {
                 </div>
                 <div className={classNames(classes.statsImageDiv)}>
                     <img className={classNames(classes.statsImage)}
-                         src={images['mad_scientist_with_clipboard_anim_300_wht.gif'].default}
+                         src={'/images/mad_scientist_with_clipboard_anim_300_wht.gif'}
                          style={{transform: 'scaleX(-1)', WebkitTransform: 'scaleX(-1)'}}
                     />
                 </div>

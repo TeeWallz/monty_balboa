@@ -5,8 +5,10 @@ import {withStyles} from '@material-ui/core/styles';
 
 import combineStyles from "../../../utils/combineStyles";
 import commonStyle from "../../../styles/common";
+import images from "../../../images";
 
-import images from "../../../images"
+
+
 
 const headerStyle = theme => ({
     header: {
@@ -32,7 +34,7 @@ class Header extends Component {
 
         return (
             <div className={classNames(classes.sectionWidth)}>
-                <img className={classes.header_image} src={images['MontyHeader.png'].default} />
+                <img className={classes.header_image} src={'images/MontyHeader.png'} />
             </div>
         )
     }

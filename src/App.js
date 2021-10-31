@@ -5,7 +5,7 @@ import * as ReactGA from "react-ga";
 // Import custom components
 import Router from "./routers";
 
-ReactGA.initialize('UA-000000-01');
+ReactGA.initialize('UA-75800811-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 class AppContainer extends Component {

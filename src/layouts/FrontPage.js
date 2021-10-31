@@ -15,6 +15,7 @@ import HitBoxChart from "../components/monty_stats/HitBoxChart";
 import StreakGraph from "../components/monty_stats/StreakGraph";
 import LightboxExample from "../components/lightbox/Lightbox";
 import Chumps from "../data/chumps";
+import Links from "../components/social/Links";
 
 const frontPageStyle = theme => ({
     header: {
@@ -80,6 +81,7 @@ class FrontPage extends Component {
 
                 <HitBoxChart setLightboxData={this.setLightboxData}/>
                 <StreakGraph />
+                <Links />
                 <CommentsContainer />
             </React.Fragment>
 

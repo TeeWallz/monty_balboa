@@ -27,10 +27,13 @@ const styles = theme => ({
         minWidth: '20px!important',
         borderRadius: '4px',
         paddingRight: '6px',
-        fontSize: '0.9em',
+        // fontSize: '0.1em',
     },
     historyTableRow: {
         cursor:'pointer',
+    },
+    thanksText: {
+        fontSize: "0.5em",
     }
 });
 
@@ -78,6 +81,19 @@ class ChumpHistory extends Component {
                 dataField: 'name',
                 text: 'Chump',
                 sort: true,
+                formatter: (cell, row, rowIndex, formatExtraData) => {
+                    console.log(cell, row, rowIndex, formatExtraData)
+                    return (
+                        <div>
+                            <div>
+                                {cell}
+                            </div>
+                            <div className={classNames(classes.thanksText)}>
+                                {chumps[row.idx].thanks}
+                            </div>
+                        </div>
+                    )
+                }
             },
             {
                 dataField: 'streak_yeet',

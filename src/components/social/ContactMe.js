@@ -55,7 +55,7 @@ class ContactMe extends Component {
                     <div className="form-group">
                         <label htmlFor="from_name">Message</label>
                         <textarea type="text" className="form-control" id="message" name="message"
-                               aria-describedby="message" placeholder="Enter email" required/>
+                               aria-describedby="message" placeholder="Enter message" required/>
                     </div>
 
                     <ReCAPTCHA

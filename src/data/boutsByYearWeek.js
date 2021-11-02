@@ -32,10 +32,6 @@ function boutsByYearWeek(){
     // Load bouts into out skeleton
     for(const bout of chumps){
         boutData[getYear(bout.parsedDate)][getWeek(bout.parsedDate)] = bout;
-        if(bout.chumps.length > 1){
-            // console.log(bout)
-        }
-        let hehe = 1;
     }
     return boutData;
 

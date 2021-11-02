@@ -82,7 +82,6 @@ class ChumpHistory extends Component {
                 text: 'Chump',
                 sort: true,
                 formatter: (cell, row, rowIndex, formatExtraData) => {
-                    console.log(cell, row, rowIndex, formatExtraData)
                     return (
                         <div>
                             <div>

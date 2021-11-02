@@ -7,6 +7,7 @@ import LayoutRoute from "./LayoutRoute";
 import MainLayout from "../components/common/layout/MainLayout";
 import FrontPage from "../layouts/FrontPage";
 import ChumpsApi from "../components/api/ChumpsApi"
+import ApiNotice from "../components/social/ApiNotice";
 // import ImagesApi from "../components/api/ImagesApi";
 
 const Router = () => (
@@ -14,6 +15,7 @@ const Router = () => (
         <Switch>
             <LayoutRoute  exact path="/" layout={MainLayout} component={FrontPage} />
             <Route        exact path="/chumps"  component={ChumpsApi}/>
+            <LayoutRoute        path="/api"  component={ApiNotice}/>
         </Switch>
     </BrowserRouter>
 );

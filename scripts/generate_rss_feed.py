@@ -20,7 +20,7 @@ with open('src/data/chumps.json', 'r+') as f:
     for bout in data:
         fe = fg.add_entry()
         fe.id(bout['date'])
-        fe.title(bout['chumps'][0]['name'])
+        fe.title("{} - {}".format(bout['date'], bout['chumps'][0]['name']))
         fe.link(href=bout['chumps'][0]['url'])
 
 #print(fg.rss_str(pretty=True))

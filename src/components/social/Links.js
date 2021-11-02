@@ -15,7 +15,6 @@ class Links extends Component {
 
     render() {
         const {classes} = this.props;
-        console.log(cooLinks)
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
@@ -26,7 +25,7 @@ class Links extends Component {
                         return(
                             <div>
                                 <img style={{width:"2em"}} src={"/images/arrow33.gif"} />
-                                <a target={"_blank"} href={item.url}>{item.name}</a>
+                                <a target="_blank" href={item.url}>{item.name}</a>
                                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px"
                                      y="0px" viewBox="0 0 100 100" width="15" height="15" className="icon outbound">
                                     <path fill="currentColor"

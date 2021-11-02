@@ -76,7 +76,6 @@ const MainLayout = (props) => {
     return (
         <div className={classes.root}>
             <DocumentMeta {...meta} />
-            <FunnyHtmlComment />
             <div className={classes.appFrame}>
                 <Header/>
                 {children}

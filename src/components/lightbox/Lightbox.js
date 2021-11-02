@@ -20,10 +20,6 @@ export default class LightboxExample extends Component {
         };
     }
 
-    openMe() {
-        console.log("openMe")
-    }
-
     render() {
         const photoIndex = this.props.lightboxCurrentChumpId;
         const isOpen = this.props.lightboxIsOpen

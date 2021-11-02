@@ -20,12 +20,18 @@ class Footer extends Component {
             <div className={classNames(classes.section, classes.sectionWidth)}>
                 <div>
                     <span>Redesign heavily inspired by </span>
-                    <a href={"https://hiatus-hiatus.github.io/"}>
+                    <a target="_blank" href={"https://hiatus-hiatus.github.io/"}>
                         https://hiatus-hiatus.github.io/
                     </a>
                 </div>
                 <div>
-                    <a href={"https://github.com/TeeWallz/monty_balboa"}>View on Github</a>
+                    <a target="_blank" href={"https://github.com/TeeWallz/monty_balboa"}>View on Github</a>
+                </div>
+                <div>
+                    <a target="_blank" href={"/rss.xml"}>RSS Feed</a>
+                </div>
+                <div>
+                    <a target="_blank" href={"/chumps.json"}>API</a>
                 </div>
             </div>
         )

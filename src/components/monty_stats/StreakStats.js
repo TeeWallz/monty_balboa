@@ -10,6 +10,7 @@ import Chumps from "../../data/chumps";
 import {median} from "../../utils/Maths";
 import skewness from "../../utils/Skewness";
 import images from "../../images";
+import {format} from "date-fns";
 
 
 const styles = theme => ({
@@ -90,11 +91,14 @@ class StreakStats extends Component {
                 <div >
                     <Table className={classes.commonRegularText}>
                         <tbody>
+                            <tr><td className={classNames(classes.textAlignRight)}>Days Since Last:</td><td>{chumps[0].streak} days</td></tr>
+                            <tr><td className={classNames(classes.textAlignRight)}>Last bout date:</td><td>{format(chumps[0].parsedDate, 'dd/MM/yyyy')}</td></tr>
+                            <tr><td className={classNames(classes.textAlignRight)}>Current Status:</td><td>{streakStatus}</td></tr>
+                            <tr><td></td><td></td></tr>
                             <tr><td className={classNames(classes.textAlignRight)}>Average Streak:</td><td>{averageStreak} days</td></tr>
                             <tr><td className={classNames(classes.textAlignRight)}>Median Streak:</td><td>{medianStreak} days</td></tr>
                             <tr><td className={classNames(classes.textAlignRight)}>Standard Deviation:</td><td>{stdDev} days</td></tr>
                             <tr><td className={classNames(classes.textAlignRight)}>Skewness:</td><td>{setSkewness}</td></tr>
-                            <tr><td className={classNames(classes.textAlignRight)}>Current Status:</td><td>{streakStatus}</td></tr>
                         </tbody>
                     </Table>
                 </div>

@@ -21,7 +21,8 @@ function Chumps(){
         const finalAmount =  singleChump['streak'] + additionAmount
         singleChump['streak_max_proportion'] = finalAmount / largestStreak
 
-        singleChump['local_image'] = window.location.origin + images[singleChump['date'] + '.jpg'].default
+        // singleChump['local_image'] = window.location.origin + images[singleChump['date'] + '.jpg'].default
+        singleChump['local_image'] = 'images/' + singleChump['image']
         // singleChump['streak_max_proportion'] = 1
     }, rawChumps); // use arr as this
 

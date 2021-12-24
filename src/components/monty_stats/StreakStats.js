@@ -91,7 +91,7 @@ class StreakStats extends Component {
                 <div >
                     <Table className={classes.commonRegularText}>
                         <tbody>
-                            <tr><td className={classNames(classes.textAlignRight)}>Days Since Last:</td><td>{chumps[0].streak} days</td></tr>
+                            <tr><td className={classNames(classes.textAlignRight)}>Days Since Last:</td><td>{chumps[0].streak} {(chumps[0].streak == 1)? "day" : "days"}</td></tr>
                             <tr><td className={classNames(classes.textAlignRight)}>Last bout date:</td><td>{format(chumps[0].parsedDate, 'dd/MM/yyyy')}</td></tr>
                             <tr><td className={classNames(classes.textAlignRight)}>Current Status:</td><td>{streakStatus}</td></tr>
                             <tr><td></td><td></td></tr>

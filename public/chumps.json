@@ -1,8 +1,23 @@
 [
     {
+        "date": "2021-12-08",
+        "thanks": "Thanks Michael!",
+        "streak": 0,
+        "chumps": [
+            {
+                "name": "We will remember you, unnamed aircon unit",
+                "url": "https://archive.ph/gJvf2"
+            }
+        ],
+        "date_aus_string": "08/10/2021",
+        "date_year": "2021",
+        "date_week": 49,
+        "image": "/images/2021-11-08.gif"
+    },
+    {
         "date": "2021-10-26",
         "thanks": "Thanks as always Gamble, as well as everyone who messaged!",
-        "streak": 95,
+        "streak": 43,
         "chumps": [
             {
                 "name": "Not even a Week after Freedom Day",

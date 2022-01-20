@@ -21,7 +21,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Deployment
 
-### `npm run reploy` 
+### `npm run deploy` 
 Deploys to Github pages, using the public URL in `public/CNAME` and the Github Pages URL from 'homepage' in package.json
 
 Guide obtained from:

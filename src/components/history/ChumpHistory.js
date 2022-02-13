@@ -217,8 +217,8 @@ function ChumpHistory(props) {
             formatter: (cell, row, rowIndex, formatExtraData) => {
                 return (
                     <span>
-                        <div > {row.date} </div>
-                        <div > {row.name} </div>
+                        <div style={{fontSize: '1.5em', fontWeight: 'bold'}}> {row.date} </div>
+                        <div style={{fontSize: '1.2em'}}> {row.name} </div>
                     </span>
                 )
             }

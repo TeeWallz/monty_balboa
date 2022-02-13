@@ -218,7 +218,8 @@ function ChumpHistory(props) {
                 return (
                     <span>
                         <div style={{fontSize: '1.5em', fontWeight: 'bold'}}> {row.date} </div>
-                        <div style={{fontSize: '1.2em'}}> {row.name} </div>
+                        <div style={{fontSize: '1.3em'}}> {row.name} </div>
+                        <div style={{fontSize: '1em'}}> Streak - <b>{row.streak}</b> days </div>
                     </span>
                 )
             }

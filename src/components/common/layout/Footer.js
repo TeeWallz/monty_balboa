@@ -31,7 +31,7 @@ class Footer extends Component {
                     <a target="_blank" href={"/rss.xml"}>RSS Feed</a>
                 </div>
                 <div>
-                    <a target="_blank" href={"/chumps.json"}>API</a>
+                    <a target="_blank" href={"/chumps.json"}>"""API"""</a>
                 </div>
             </div>
         )

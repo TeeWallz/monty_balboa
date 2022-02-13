@@ -12,7 +12,8 @@
         "date_aus_string": "08/10/2021",
         "date_year": "2021",
         "date_week": 49,
-        "image": "/images/2021-11-08.gif"
+        "image": "/images/2021-11-08.gif",
+        "thumb": "/images/thumbs/2021-11-08.jpg"
     },
     {
         "date": "2021-10-26",
@@ -27,7 +28,8 @@
         "date_aus_string": "26/10/2021",
         "date_year": "2021",
         "date_week": 43,
-        "image": "/images/2021-10-26.jpg"
+        "image": "/images/2021-10-26.jpg",
+        "thumb": "/images/thumbs/2021-10-26.jpg"
     },
     {
         "date": "2021-07-13",
@@ -43,7 +45,8 @@
         "date_aus_string": "13/07/2021",
         "date_year": "2021",
         "date_week": 28,
-        "image": "/images/2021-07-13.jpg"
+        "image": "/images/2021-07-13.jpg",
+        "thumb": "/images/thumbs/2021-07-13.jpg"
     },
     {
         "date": "2021-05-13",
@@ -59,7 +62,8 @@
         "date_aus_string": "13/05/2021",
         "date_year": "2021",
         "date_week": 19,
-        "image": "/images/2021-05-13.jpg"
+        "image": "/images/2021-05-13.jpg",
+        "thumb": "/images/thumbs/2021-05-13.jpg"
     },
     {
         "date": "2021-04-22",
@@ -75,7 +79,8 @@
         "date_aus_string": "22/04/2021",
         "date_year": "2021",
         "date_week": 16,
-        "image": "/images/2021-04-22.jpg"
+        "image": "/images/2021-04-22.jpg",
+        "thumb": "/images/thumbs/2021-04-22.jpg"
     },
     {
         "date": "2021-03-24",
@@ -91,7 +96,8 @@
         "date_aus_string": "24/03/2021",
         "date_year": "2021",
         "date_week": 12,
-        "image": "/images/2021-03-24.jpg"
+        "image": "/images/2021-03-24.jpg",
+        "thumb": "/images/thumbs/2021-03-24.jpg"
     },
     {
         "date": "2020-11-07",
@@ -107,7 +113,8 @@
         "date_aus_string": "07/11/2020",
         "date_year": "2020",
         "date_week": 45,
-        "image": "/images/2020-11-07.jpg"
+        "image": "/images/2020-11-07.jpg",
+        "thumb": "/images/thumbs/2020-11-07.jpg"
     },
     {
         "date": "2020-10-27",
@@ -123,7 +130,8 @@
         "date_aus_string": "27/10/2020",
         "date_year": "2020",
         "date_week": 44,
-        "image": "/images/2020-10-27.jpg"
+        "image": "/images/2020-10-27.jpg",
+        "thumb": "/images/thumbs/2020-10-27.jpg"
     },
     {
         "date": "2020-10-07",
@@ -139,7 +147,8 @@
         "date_aus_string": "07/10/2020",
         "date_year": "2020",
         "date_week": 41,
-        "image": "/images/2020-10-07.jpg"
+        "image": "/images/2020-10-07.jpg",
+        "thumb": "/images/thumbs/2020-10-07.jpg"
     },
     {
         "date": "2020-06-15",
@@ -155,7 +164,8 @@
         "date_aus_string": "15/06/2020",
         "date_year": "2020",
         "date_week": 25,
-        "image": "/images/2020-06-15.jpg"
+        "image": "/images/2020-06-15.jpg",
+        "thumb": "/images/thumbs/2020-06-15.jpg"
     },
     {
         "date": "2020-03-05",
@@ -171,7 +181,8 @@
         "date_aus_string": "05/03/2020",
         "date_year": "2020",
         "date_week": 10,
-        "image": "/images/2020-03-05.jpg"
+        "image": "/images/2020-03-05.jpg",
+        "thumb": "/images/thumbs/2020-03-05.jpg"
     },
     {
         "date": "2020-01-22",
@@ -187,7 +198,8 @@
         "date_aus_string": "22/01/2020",
         "date_year": "2020",
         "date_week": 4,
-        "image": "/images/2020-01-22.jpg"
+        "image": "/images/2020-01-22.jpg",
+        "thumb": "/images/thumbs/2020-01-22.jpg"
     },
     {
         "date": "2019-12-17",
@@ -203,7 +215,8 @@
         "date_aus_string": "17/12/2019",
         "date_year": "2019",
         "date_week": 51,
-        "image": "/images/2019-12-17.jpg"
+        "image": "/images/2019-12-17.jpg",
+        "thumb": "/images/thumbs/2019-12-17.jpg"
     },
     {
         "date": "2019-11-06",
@@ -219,7 +232,8 @@
         "date_aus_string": "06/11/2019",
         "date_year": "2019",
         "date_week": 45,
-        "image": "/images/2019-11-06.jpg"
+        "image": "/images/2019-11-06.jpg",
+        "thumb": "/images/thumbs/2019-11-06.jpg"
     },
     {
         "date": "2019-09-09",
@@ -235,7 +249,8 @@
         "date_aus_string": "09/09/2019",
         "date_year": "2019",
         "date_week": 37,
-        "image": "/images/2019-09-09.jpg"
+        "image": "/images/2019-09-09.jpg",
+        "thumb": "/images/thumbs/2019-09-09.jpg"
     },
     {
         "date": "2019-04-23",
@@ -251,7 +266,8 @@
         "date_aus_string": "23/04/2019",
         "date_year": "2019",
         "date_week": 17,
-        "image": "/images/2019-04-23.jpg"
+        "image": "/images/2019-04-23.jpg",
+        "thumb": "/images/thumbs/2019-04-23.jpg"
     },
     {
         "date": "2019-04-08",
@@ -267,7 +283,8 @@
         "date_aus_string": "08/04/2019",
         "date_year": "2019",
         "date_week": 15,
-        "image": "/images/2019-04-08.jpg"
+        "image": "/images/2019-04-08.jpg",
+        "thumb": "/images/thumbs/2019-04-08.jpg"
     },
     {
         "date": "2019-02-11",
@@ -283,7 +300,8 @@
         "date_aus_string": "11/02/2019",
         "date_year": "2019",
         "date_week": 7,
-        "image": "/images/2019-02-11.jpg"
+        "image": "/images/2019-02-11.jpg",
+        "thumb": "/images/thumbs/2019-02-11.jpg"
     },
     {
         "date": "2019-01-23",
@@ -299,7 +317,8 @@
         "date_aus_string": "23/01/2019",
         "date_year": "2019",
         "date_week": 4,
-        "image": "/images/2019-01-23.jpg"
+        "image": "/images/2019-01-23.jpg",
+        "thumb": "/images/thumbs/2019-01-23.jpg"
     },
     {
         "date": "2018-06-13",
@@ -315,7 +334,8 @@
         "date_aus_string": "13/06/2018",
         "date_year": "2018",
         "date_week": 24,
-        "image": "/images/2018-06-13.jpg"
+        "image": "/images/2018-06-13.jpg",
+        "thumb": "/images/thumbs/2018-06-13.jpg"
     },
     {
         "date": "2018-02-05",
@@ -331,7 +351,8 @@
         "date_aus_string": "05/02/2018",
         "date_year": "2018",
         "date_week": 6,
-        "image": "/images/2018-02-05.jpg"
+        "image": "/images/2018-02-05.jpg",
+        "thumb": "/images/thumbs/2018-02-05.jpg"
     },
     {
         "date": "2017-06-02",
@@ -347,7 +368,8 @@
         "date_aus_string": "02/06/2017",
         "date_year": "2017",
         "date_week": 22,
-        "image": "/images/2017-06-02.jpg"
+        "image": "/images/2017-06-02.jpg",
+        "thumb": "/images/thumbs/2017-06-02.jpg"
     },
     {
         "date": "2017-05-30",
@@ -363,7 +385,8 @@
         "date_aus_string": "30/05/2017",
         "date_year": "2017",
         "date_week": 22,
-        "image": "/images/2017-05-30.jpg"
+        "image": "/images/2017-05-30.jpg",
+        "thumb": "/images/thumbs/2017-05-30.jpg"
     },
     {
         "date": "2017-05-10",
@@ -379,7 +402,8 @@
         "date_aus_string": "10/05/2017",
         "date_year": "2017",
         "date_week": 19,
-        "image": "/images/2017-05-10.jpg"
+        "image": "/images/2017-05-10.jpg",
+        "thumb": "/images/thumbs/2017-05-10.jpg"
     },
     {
         "date": "2017-04-26",
@@ -395,7 +419,8 @@
         "date_aus_string": "26/04/2017",
         "date_year": "2017",
         "date_week": 17,
-        "image": "/images/2017-04-26.jpg"
+        "image": "/images/2017-04-26.jpg",
+        "thumb": "/images/thumbs/2017-04-26.jpg"
     },
     {
         "date": "2017-03-30",
@@ -411,7 +436,8 @@
         "date_aus_string": "30/03/2017",
         "date_year": "2017",
         "date_week": 13,
-        "image": "/images/2017-03-30.jpg"
+        "image": "/images/2017-03-30.jpg",
+        "thumb": "/images/thumbs/2017-03-30.jpg"
     },
     {
         "date": "2017-01-16",
@@ -427,7 +453,8 @@
         "date_aus_string": "16/01/2017",
         "date_year": "2017",
         "date_week": 3,
-        "image": "/images/2017-01-16.jpg"
+        "image": "/images/2017-01-16.jpg",
+        "thumb": "/images/thumbs/2017-01-16.jpg"
     },
     {
         "date": "2016-10-22",
@@ -443,7 +470,8 @@
         "date_aus_string": "22/10/2016",
         "date_year": "2016",
         "date_week": 42,
-        "image": "/images/2016-10-22.jpg"
+        "image": "/images/2016-10-22.jpg",
+        "thumb": "/images/thumbs/2016-10-22.jpg"
     },
     {
         "date": "2016-10-11",
@@ -459,7 +487,8 @@
         "date_aus_string": "11/10/2016",
         "date_year": "2016",
         "date_week": 41,
-        "image": "/images/2016-10-11.jpg"
+        "image": "/images/2016-10-11.jpg",
+        "thumb": "/images/thumbs/2016-10-11.jpg"
     },
     {
         "date": "2016-09-16",
@@ -475,7 +504,8 @@
         "date_aus_string": "16/09/2016",
         "date_year": "2016",
         "date_week": 37,
-        "image": "/images/2016-09-16.jpg"
+        "image": "/images/2016-09-16.jpg",
+        "thumb": "/images/thumbs/2016-09-16.jpg"
     },
     {
         "date": "2016-06-29",
@@ -491,7 +521,8 @@
         "date_aus_string": "29/06/2016",
         "date_year": "2016",
         "date_week": 26,
-        "image": "/images/2016-06-29.jpg"
+        "image": "/images/2016-06-29.jpg",
+        "thumb": "/images/thumbs/2016-06-29.jpg"
     },
     {
         "date": "2016-06-20",
@@ -507,7 +538,8 @@
         "date_aus_string": "20/06/2016",
         "date_year": "2016",
         "date_week": 25,
-        "image": "/images/2016-06-20.jpg"
+        "image": "/images/2016-06-20.jpg",
+        "thumb": "/images/thumbs/2016-06-20.jpg"
     },
     {
         "date": "2016-05-17",
@@ -523,7 +555,8 @@
         "date_aus_string": "17/05/2016",
         "date_year": "2016",
         "date_week": 20,
-        "image": "/images/2016-05-17.jpg"
+        "image": "/images/2016-05-17.jpg",
+        "thumb": "/images/thumbs/2016-05-17.jpg"
     },
     {
         "date": "2016-04-27",
@@ -544,7 +577,8 @@
         "date_aus_string": "27/04/2016",
         "date_year": "2016",
         "date_week": 17,
-        "image": "/images/2016-04-27.jpg"
+        "image": "/images/2016-04-27.jpg",
+        "thumb": "/images/thumbs/2016-04-27.jpg"
     },
     {
         "date": "2016-04-04",
@@ -565,7 +599,8 @@
         "date_aus_string": "04/04/2016",
         "date_year": "2016",
         "date_week": 14,
-        "image": "/images/2016-04-04.jpg"
+        "image": "/images/2016-04-04.jpg",
+        "thumb": "/images/thumbs/2016-04-04.jpg"
     },
     {
         "date": "2016-03-31",
@@ -586,7 +621,8 @@
         "date_aus_string": "31/03/2016",
         "date_year": "2016",
         "date_week": 13,
-        "image": "/images/2016-03-31.jpg"
+        "image": "/images/2016-03-31.jpg",
+        "thumb": "/images/thumbs/2016-03-31.jpg"
     },
     {
         "date": "2016-03-12",
@@ -602,7 +638,8 @@
         "date_aus_string": "12/03/2016",
         "date_year": "2016",
         "date_week": 10,
-        "image": "/images/2016-03-12.jpg"
+        "image": "/images/2016-03-12.jpg",
+        "thumb": "/images/thumbs/2016-03-12.jpg"
     },
     {
         "date": "2016-02-22",
@@ -618,6 +655,7 @@
         "date_aus_string": "22/02/2016",
         "date_year": "2016",
         "date_week": 8,
-        "image": "/images/2016-02-22.jpg"
+        "image": "/images/2016-02-22.jpg",
+        "thumb": "/images/thumbs/2016-02-22.jpg"
     }
 ]

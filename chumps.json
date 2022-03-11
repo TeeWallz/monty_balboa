@@ -1,8 +1,24 @@
 [
     {
+        "date": "2022-03-11",
+        "thanks": "Thanks Sally!",
+        "streak": 0,
+        "chumps": [
+            {
+                "name": "Absolutely Demolished Truck",
+                "url": "https://twitter.com/heidimur/status/1502069151312990208?s=21"
+            }
+        ],
+        "date_aus_string": "11/03/2022",
+        "date_year": "2022",
+        "date_week": 10,
+        "image": "/images/2022-03-11.jpg",
+        "thumb": "/images/2022-03-11.jpg"
+    },
+    {
         "date": "2021-12-08",
         "thanks": "Thanks Michael!",
-        "streak": 0,
+        "streak": 154,
         "chumps": [
             {
                 "name": "We will remember you, unnamed aircon unit",

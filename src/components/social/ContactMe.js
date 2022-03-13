@@ -38,8 +38,12 @@ class ContactMe extends Component {
         const {classes} = this.props;
 
         return (
-            <div className={classNames(classes.section, classes.sectionWidth)}>
+            <div className={classNames(classes.section, classes.sectionWidth)} style={{'alignItems': 'center'}}>
                 <div className={classNames(classes.commonHeaderText)}>Report a new bout!</div>
+                <div className={classNames(classes.commonBigText)} style={{'textAlign': 'center'}}>
+                    If you have a picture, or have an aversion to forms, email your message/images to <a href="mailto:montybalboacontact@gmail.com">montybalboacontact@gmail.com</a>
+                </div>
+                <br/>
                 <form onSubmit={this.sendEmail}>
 
                     <div className="form-group">

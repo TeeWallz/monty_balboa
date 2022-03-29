@@ -12,6 +12,8 @@ function Chumps(){
     const largestStreak = Math.max.apply(Math, rawChumps.map(function(bout) { return bout.streak; }))
 
     rawChumps.forEach(function(singleChump, index) {
+        console.log(singleChump['parsedDate'])
+
         singleChump['idx'] = index
         singleChump['parsedDate'] = parse( singleChump['date'], 'yyyy-MM-dd', new Date() )
         singleChump['date_weekyear'] = getWeekYear( singleChump['parsedDate'] )

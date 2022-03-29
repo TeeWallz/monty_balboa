@@ -14,7 +14,7 @@ fg.description('An RSS feed showing when Monty Balboa was hit')
 fg.language('en')
 
 
-with open('src/data/chumps.json', 'r+') as f:
+with open('../src/data/chumps.json', 'r+') as f:
     data = json.load(f)
 
     for bout in data:
@@ -24,4 +24,4 @@ with open('src/data/chumps.json', 'r+') as f:
         fe.link(href=bout['chumps'][0]['url'])
 
 #print(fg.rss_str(pretty=True))
-fg.rss_file('build/rss.xml') # Write the RSS feed to a file
+fg.rss_file('../build/rss.xml') # Write the RSS feed to a file

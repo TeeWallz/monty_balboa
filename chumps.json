@@ -2,9 +2,10 @@
     {
         "date": "2022-03-29",
         "thanks": "Thanks Nick!",
+        "streak": 0,
         "chumps": [
             {
-                "name": "Glass truck absolutly shattered",
+                "name": "Truck absolutly shattered that he met Monty",
                 "url": "https://twitter.com/MontagueStBridg/status/1508713050467344384/photo/1"
             }
         ],
@@ -17,7 +18,7 @@
     {
         "date": "2022-03-13",
         "thanks": "Thanks Sera, Hassan and Harmony!",
-        "streak": 0,
+        "streak": 16,
         "chumps": [
             {
                 "name": "Van being a smooth criminal and leaning into a 3rd day in a row",

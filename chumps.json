@@ -1,8 +1,24 @@
 [
     {
+        "date": "2022-05-07",
+        "thanks": "Thanks Craygus Jamison and Nicole! :D",
+        "streak": 0,
+        "chumps": [
+            {
+                "name": "Campervan no longer on vacation!",
+                "url": "https://m.facebook.com/story.php?story_fbid=1928752673975546&id=412169632300532"
+            }
+        ],
+        "date_aus_string": "07/05/2022",
+        "date_year": "2022",
+        "date_week": 18,
+        "image": "/images/2022-05-07.jpg",
+        "thumb": "/images/2022-05-07.jpg"
+    },
+    {
         "date": "2022-03-29",
         "thanks": "Thanks Nick!",
-        "streak": 0,
+        "streak": 39,
         "chumps": [
             {
                 "name": "Truck absolutly shattered that he met Monty",
@@ -73,7 +89,7 @@
                 "url": "https://archive.ph/gJvf2"
             }
         ],
-        "date_aus_string": "08/10/2021",
+        "date_aus_string": "08/12/2021",
         "date_year": "2021",
         "date_week": 49,
         "image": "/images/2021-11-08.gif",

@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import combineStyles from "../../utils/combineStyles";
 import commonStyle from "../../styles/common";
 import Chumps from "../../data/chumps";
@@ -10,7 +10,7 @@ import images from "../../images";
 
 const styles = theme => ({
     chumpImageFrame: {
-        width: '60%',
+        // width: '60%',
         // display: 'block',
         // margin: 'auto',
         maxWidth: '70%',
@@ -25,7 +25,7 @@ const styles = theme => ({
         boxSizing: 'border-box',
         display: 'inline-block',
         margin: '2vh 2vw',
-        padding: '10px',
+        // padding: '10px',
         position: 'relative',
         textAlign: 'center',
         "&:before": {
@@ -49,19 +49,19 @@ const styles = theme => ({
             top: '-2.5vmin',
         },
     },
-    chumpImageContainer:{
+    chumpImageContainer: {
         width: '100%',
     },
-    chumpImage:{
+    chumpImage: {
         width: '100%',
     },
     chumpName: {
         fontSize: '4vw',
     },
-    candle:{
+    candle: {
         position: 'absolute',
         width: '40%',
-        top: '59%',
+        bottom: '0',
         zIndex: 100,
     },
     candleLeft: {
@@ -83,9 +83,33 @@ const styles = theme => ({
 
 class CurrentChump extends Component {
 
+
+
     render() {
-        const {classes} = this.props;
+        const { classes } = this.props;
         const chumps = Chumps()
+        let extension = chumps[0].image.split('.').pop();
+        let my_image = (<></>)
+
+
+        console.log("-----")
+        console.log(extension)
+
+        if (extension == 'webm') {
+            my_image = (
+                <>
+                    <video width="250" height="320" autoPlay muted loop>
+                        <source src={chumps[0].image} type="video/webm" />
+                        Your browser does not support the video tag.
+                    </video>
+                </>
+            )
+        }
+        else {
+            my_image = (
+                <img className={classes.chumpImage} src={chumps[0].image} />
+            )
+        }
 
         return (
             <div className={classNames(classes.section, classes.sectionWidth)}>
@@ -94,15 +118,16 @@ class CurrentChump extends Component {
                 </div>
                 <div className={classes.chumpImageFrame}>
                     <div className={classes.chumpImageContainer}>
-                        <img className={classes.frameRibbon} src={'/images/ribbon.png'}/>
-                        <img className={classes.chumpImage} src={chumps[0].image}/>
+                        <img className={classes.frameRibbon} src={'/images/ribbon.png'} />
+                        {/* <img className={classes.chumpImage} src={chumps[0].image} /> */}
+                        {my_image}
                     </div>
 
                     <img className={classNames(classes.candle, classes.candleLeft)}
-                         src={'/images/candle.gif'}
+                        src={'/images/candle.gif'}
                     />
                     <img className={classNames(classes.candle, classes.candleRight)}
-                         src={'/images/candle.gif'}
+                        src={'/images/candle.gif'}
                     />
                     {/*<div className={classNames(classes.frameRibbon)}></div>*/}
 

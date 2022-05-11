@@ -1,8 +1,24 @@
 [
     {
+        "date": "2022-05-11",
+        "thanks": "Thanks Noni, DW and BB Entertainment Australia! Video from https://www.youtube.com/channel/UCJvv2s4CIWOSoQQcPjW85Uw/featured",
+        "streak": 0,
+        "chumps": [
+            {
+                "name": "Cement Mixer unable to cure Monty!",
+                "url": "https://www.youtube.com/shorts/KEqwL7RrLEE"
+            }
+        ],
+        "date_aus_string": "11/05/2022",
+        "date_year": "2022",
+        "date_week": 19,
+        "image": "/images/2022-05-11.webm",
+        "thumb": "/images/2022-05-11.jpg"
+    },
+    {
         "date": "2022-05-07",
         "thanks": "Thanks Craygus Jamison and Nicole! Especially Nicole for the fab video!",
-        "streak": 0,
+        "streak": 4,
         "chumps": [
             {
                 "name": "Campervan no longer on vacation!",

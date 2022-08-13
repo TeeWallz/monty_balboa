@@ -1,8 +1,40 @@
 [
     {
+        "date": "2022-08-11",
+        "thanks": "",
+        "streak": 40,
+        "chumps": [
+            {
+                "name": "Garbage Truck heading straight to the tip itself!",
+                "url": "https://www.facebook.com/montylimbo/photos/a.412173662300129/2000426303474849/"
+            }
+        ],
+        "date_aus_string": "11/08/2022",
+        "date_year": "2022",
+        "date_week": 32,
+        "image": "/images/2022-08-11.png",
+        "thumb": "/images/2022-08-11.png"
+    },
+    {
+        "date": "2022-07-02",
+        "thanks": "",
+        "streak": 8,
+        "chumps": [
+            {
+                "name": "Skip truck thought they could skip Monty's ire!",
+                "url": "https://www.facebook.com/montylimbo/posts/pfbid02DsmsM8jiArUMChhsWKDG7XkhwiGXbxxkyxW5bug7x8eLY3mdWvU3b7G5TNfTLjrjl"
+            }
+        ],
+        "date_aus_string": "02/07/2022",
+        "date_year": "2022",
+        "date_week": 26,
+        "image": "/images/2022-07-02.png",
+        "thumb": "/images/2022-07-02.png"
+    },
+    {
         "date": "2022-06-24",
         "thanks": "Thanks Matt, Harmony and Mick!",
-        "streak": 0,
+        "streak": 8,
         "chumps": [
             {
                 "name": "Rental who thought they could escape our gaze!",
@@ -18,7 +50,7 @@
     {
         "date": "2022-06-16",
         "thanks": "Thanks Joshua and Rachel!",
-        "streak": 0,
+        "streak": 8,
         "chumps": [
             {
                 "name": "Moving van caught on a late night Maccas run",

@@ -1,5 +1,21 @@
 [
     {
+        "date": "2022-06-24",
+        "thanks": "Thanks Matt, Harmony and Mick!",
+        "streak": 0,
+        "chumps": [
+            {
+                "name": "Rental who thought they could escape our gaze!",
+                "url": "https://twitter.com/MontagueStBridg/status/1539811129676902400/photo/1"
+            }
+        ],
+        "date_aus_string": "24/06/2022",
+        "date_year": "2022",
+        "date_week": 25,
+        "image": "/images/2022-06-24.png",
+        "thumb": "/images/2022-06-24.png"
+    },
+    {
         "date": "2022-06-16",
         "thanks": "Thanks Joshua and Rachel!",
         "streak": 0,

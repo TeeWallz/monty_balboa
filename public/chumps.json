@@ -1,8 +1,24 @@
 [
     {
+        "date": "2022-08-25",
+        "thanks": "Thank you Blamed Fawn!",
+        "streak": 11,
+        "chumps": [
+            {
+                "name": "Galaxy Truck out of this world and straight into Monty!",
+                "url": "https://www.youtube.com/watch?v=jaUo1KXIU1k"
+            }
+        ],
+        "date_aus_string": "25/08/2022",
+        "date_year": "2022",
+        "date_week": 34,
+        "image": "/images/2022-08-25.jpg",
+        "thumb": "/images/2022-08-25.jpg"
+    },
+    {
         "date": "2022-08-11",
         "thanks": "",
-        "streak": 40,
+        "streak": 14,
         "chumps": [
             {
                 "name": "Garbage Truck heading straight to the tip itself!",

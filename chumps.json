@@ -1,8 +1,24 @@
 [
     {
+        "date": "2022-10-26",
+        "thanks": "Thank you Jei and Anonymous!",
+        "streak": 11,
+        "chumps": [
+            {
+                "name": "Doel made a Deal with the Devil and lost!",
+                "url": "https://twitter.com/MontagueStBridg/status/1585162568246906881/photo/1"
+            }
+        ],
+        "date_aus_string": "20/10/2022",
+        "date_year": "2022",
+        "date_week": 43,
+        "image": "/images/2022-10-26.png",
+        "thumb": "/images/2022-10-26.png"
+    },
+    {
         "date": "2022-10-20",
         "thanks": "Thank you Gamble and @tpwkelly!",
-        "streak": 11,
+        "streak": 6,
         "chumps": [
             {
                 "name": "First the Queen, then Liz Truss, now Monty?!",

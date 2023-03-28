@@ -1,8 +1,24 @@
 [
     {
+        "date": "2023-03-28",
+        "thanks": "Thank you Montyfan, Sam, Quin, Reagan, Callum, Sharma, Belinda!",
+        "streak": 11,
+        "chumps": [
+            {
+                "name": "Truck trying to be towed tangled in twisted cables and tires tiredly turning",
+                "url": "https://www.reddit.com/r/melbourne/comments/1243ajb/montague_bridge/"
+            }
+        ],
+        "date_aus_string": "28/03/2023",
+        "date_year": "2023",
+        "date_week": 13,
+        "image": "/images/2023-03-28.jpeg",
+        "thumb": "/images/2023-03-28.jpeg"
+    },
+    {
         "date": "2022-11-21",
         "thanks": "Thank you Samantha, Mark, Roni, Pat, Jeremt, Richard and Prathmesh!",
-        "streak": 11,
+        "streak": 127,
         "chumps": [
             {
                 "name": "Concrete Truck thought he could duck out for a ciggie. Surely no one will notice..!",

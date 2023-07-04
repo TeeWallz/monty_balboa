@@ -1,8 +1,56 @@
 [
     {
+        "date": "2023-07-04",
+        "thanks": "Thank you J.Duffus and P Ghosh!",
+        "streak": 11,
+        "chumps": [
+            {
+                "name": "Tempestuous Transport Truck tempts to tear away the treasured Monty Bridge!",
+                "url": "https://m.facebook.com/story.php?story_fbid=pfbid09or2rj2r3WrC1MFmyPR9kWGuFPmGMP6NsgUgEi7wGKc9gYKTehGGmckJdHHQL3VHl&id=100064837325046&mibextid=Nif5oz"
+            }
+        ],
+        "date_aus_string": "04/07/2023",
+        "date_year": "2023",
+        "date_week": 27,
+        "image": "/images/2023-07-04.jpg",
+        "thumb": "/images/2023-07-04..jpg"
+    },
+    {
+        "date": "2023-06-16",
+        "thanks": "Thank you Elizabeth, Gene, Joel, Rhydian, Daniel, Rohan, Issy and Nadine!!",
+        "streak": 11,
+        "chumps": [
+            {
+                "name": "Plain White Tee..Truck being consoled by Yellow and Red outlined Aliens! Believe!",
+                "url": "https://twitter.com/9NewsMelb/status/1669548998238302208?s=20"
+            }
+        ],
+        "date_aus_string": "16/06/2023",
+        "date_year": "2023",
+        "date_week": 25,
+        "image": "/images/2023-06-16.jpg",
+        "thumb": "/images/2023-06-16.jpg"
+    },
+    {
+        "date": "2023-03-28",
+        "thanks": "Thank you Montyfan, Sam, Quin, Reagan, Callum, Sharma, Belinda!",
+        "streak": 80,
+        "chumps": [
+            {
+                "name": "Truck trying to be towed tangled in twisted cables and tires tiredly turning",
+                "url": "https://www.reddit.com/r/melbourne/comments/1243ajb/montague_bridge/"
+            }
+        ],
+        "date_aus_string": "28/03/2023",
+        "date_year": "2023",
+        "date_week": 13,
+        "image": "/images/2023-03-28.jpeg",
+        "thumb": "/images/2023-03-28.jpeg"
+    },
+    {
         "date": "2022-11-21",
         "thanks": "Thank you Samantha, Mark, Roni, Pat, Jeremt, Richard and Prathmesh!",
-        "streak": 11,
+        "streak": 127,
         "chumps": [
             {
                 "name": "Concrete Truck thought he could duck out for a ciggie. Surely no one will notice..!",

@@ -1,8 +1,24 @@
 [
     {
+        "date": "2023-07-07",
+        "thanks": "Thank you DANNY!",
+        "streak": 11,
+        "chumps": [
+            {
+                "name": "Thrifty Truck Takes on Montague Street Bridge: When Blue Became Bruised!",
+                "url": "https://howmanydayssincemontaguestreetbridgehasbeenhit.com/"
+            }
+        ],
+        "date_aus_string": "07/07/2023",
+        "date_year": "2023",
+        "date_week": 27,
+        "image": "/images/2023-07-07.jpg",
+        "thumb": "/images/2023-07-07..jpg"
+    },
+    {
         "date": "2023-07-04",
         "thanks": "Thank you J.Duffus and P Ghosh!",
-        "streak": 11,
+        "streak": 21,
         "chumps": [
             {
                 "name": "Tempestuous Transport Truck tempts to tear away the treasured Monty Bridge!",

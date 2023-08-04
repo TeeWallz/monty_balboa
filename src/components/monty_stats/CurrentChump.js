@@ -57,6 +57,7 @@ const styles = theme => ({
     },
     chumpName: {
         fontSize: '4vw',
+        textAlign: 'center',
     },
     candle: {
         position: 'absolute',

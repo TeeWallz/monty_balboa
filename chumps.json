@@ -1,8 +1,24 @@
 [
     {
-        "date": "2023-07-07",
-        "thanks": "Thank you DANNY!",
+        "date": "2023-08-04",
+        "thanks": "Thank you Nick as always!",
         "streak": 11,
+        "chumps": [
+            {
+                "name": "Preposterous Pick-up Plight: Trembling Truck, Terrifying Bridge, and an Excavator's Escapade!",
+                "url": "https://howmanydayssincemontaguestreetbridgehasbeenhit.com/"
+            }
+        ],
+        "date_aus_string": "04/08/2023",
+        "date_year": "2023",
+        "date_week": 31,
+        "image": "/images/2023-08-04.jpg",
+        "thumb": "/images/2023-08-04.jpg"
+    },
+    {
+        "date": "2023-07-07",
+        "thanks": "Thank you THOMAS!",
+        "streak": 28,
         "chumps": [
             {
                 "name": "Thrifty Truck Takes on Montague Street Bridge: When Blue Became Bruised!",
@@ -13,7 +29,7 @@
         "date_year": "2023",
         "date_week": 27,
         "image": "/images/2023-07-07.jpg",
-        "thumb": "/images/2023-07-07..jpg"
+        "thumb": "/images/2023-07-07.jpg"
     },
     {
         "date": "2023-07-04",
@@ -29,7 +45,7 @@
         "date_year": "2023",
         "date_week": 27,
         "image": "/images/2023-07-04.jpg",
-        "thumb": "/images/2023-07-04..jpg"
+        "thumb": "/images/2023-07-04.jpg"
     },
     {
         "date": "2023-06-16",
@@ -924,7 +940,7 @@
     },
     {
         "date": "2016-03-31",
-        "thanks": null,
+        "thanks": "",
         "streak": 4,
         "chumps": [
             {
@@ -946,7 +962,7 @@
     },
     {
         "date": "2016-03-12",
-        "thanks": null,
+        "thanks": "",
         "streak": 19,
         "chumps": [
             {

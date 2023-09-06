@@ -1,8 +1,24 @@
 [
     {
+        "date": "2023-08-17",
+        "thanks": "Thank you Tardis and Jacqui!",
+        "streak": 11,
+        "chumps": [
+            {
+                "name": "Wobbly White Truck Wrecks Tram's Tranquil Travels on Montague!",
+                "url": "https://twitter.com/3AW693/status/1691999467254481091"
+            }
+        ],
+        "date_aus_string": "17/08/2023",
+        "date_year": "2023",
+        "date_week": 33,
+        "image": "/images/2023-08-17.jpg",
+        "thumb": "/images/2023-08-17.jpg"
+    },
+    {
         "date": "2023-08-04",
         "thanks": "Thank you Nick as always!",
-        "streak": 11,
+        "streak": 13,
         "chumps": [
             {
                 "name": "Preposterous Pick-up Plight: Trembling Truck, Terrifying Bridge, and an Excavator's Escapade!",

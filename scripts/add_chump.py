@@ -63,10 +63,11 @@ class OutputFile(BaseModel):
         # compare each date to the next date and set streak as the difference
         # between the two dates
         for i in range(len(self.bouts) - 1):
-            self.bouts[i].streak = (datetime.strptime(self.bouts[i].date, "%Y-%m-%d") - datetime.strptime(self.bouts[i + 1].date, "%Y-%m-%d")).days
-
-        # set the last streak to 1
-        self.bouts[-1].streak = 1
+            if i == 0 or i == len(self.bouts) - 1:
+                # set the first streak to 1
+                self.bouts[i].streak = 1
+            else:
+                self.bouts[i].streak = (datetime.strptime(self.bouts[i - 1].date, "%Y-%m-%d") - datetime.strptime(self.bouts[i].date, "%Y-%m-%d")).days
 
 def load_from_json_file(file_path):
     with open(file_path, 'r') as file:
@@ -87,6 +88,7 @@ if __name__ == "__main__":
     # Check if there are named arguments --name, --url
     parser=argparse.ArgumentParser()
     parser.add_argument("--new", help="add the chump via arguments. Exclude to use stdin", action='store_true')
+    parser.add_argument("--recalc", help="Recalc the streaks", action='store_true')
     parser.add_argument("--date", help="Date of the chump in YYYY-MM-DD format")
     parser.add_argument("--name", help="Name of the chump")
     parser.add_argument("--url", help="URL of the chump")
@@ -99,8 +101,16 @@ if __name__ == "__main__":
     url = None
     thanks = None
 
+    # cd to scripts directory
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    if args.new:
+    my_bouts = load_from_json_file(chump_file_path)
+
+    if args.recalc:
+        my_bouts.recalculate_streaks()
+        save_to_json_file(my_bouts, f"{chump_file_path}")
+        sys.exit(0)
+    elif args.new:
         required_args = ["date", "name", "url", "thanks"]
         for arg in required_args:
             if not getattr(args, arg):
@@ -111,6 +121,7 @@ if __name__ == "__main__":
         name = args.name
         url = args.url
         thanks = args.thanks
+        my_bouts.add_bout(Bout(date=date, thanks=thanks, chumps=[Chump(name=name, url=url)], image="", thumb=""))
     
     else:
         # Read date from stdin
@@ -125,14 +136,10 @@ if __name__ == "__main__":
 
         print("Enter name: ", end="")
         name = input()
+        my_bouts.add_bout(Bout(date=date, thanks=thanks, chumps=[Chump(name=name, url=url)], image="", thumb=""))
 
-    # cd to scripts directory
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
-    my_bouts = load_from_json_file(chump_file_path)
 
     # Add new data to my_bouts
-    my_bouts.add_bout(Bout(date=date, thanks=thanks, chumps=[Chump(name=name, url=url)], image="", thumb=""))
     print(my_bouts)
 
     # Save to file

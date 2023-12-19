@@ -86,7 +86,7 @@ class CurrentChump extends Component {
 
 
 
-    render() {
+    render () {
         const { classes } = this.props;
         const chumps = Chumps()
         let extension = chumps[0].image.split('.').pop();
@@ -99,7 +99,7 @@ class CurrentChump extends Component {
         if (extension == 'webm') {
             my_image = (
                 <>
-                    <video width="250" height="320" autoPlay muted loop>
+                    <video width="320" height="320" autoPlay muted loop>
                         <source src={chumps[0].image} type="video/webm" />
                         Your browser does not support the video tag.
                     </video>

@@ -1,8 +1,24 @@
 [
   {
+    "date": "2023-12-10",
+    "thanks": "Thank you Tom!",
+    "streak": 11,
+    "chumps": [
+      {
+        "name": "Maui's Misfortune: Montague's Magnificent Mishap with the White Whopper",
+        "url": "https://twitter.com/inn0cntbyst4ndr/status/1734001722006339982"
+      }
+    ],
+    "date_aus_string": "10/12/2023",
+    "date_year": "2023",
+    "date_week": "50",
+    "image": "/images/2023-12-10.png",
+    "thumb": "/images/2023-12-10.png"
+  },
+  {
     "date": "2023-09-06",
     "thanks": "Thank you TCoen for the image!",
-    "streak": 11,
+    "streak": 96,
     "chumps": [
       {
         "name": "Shattered Dreams: Montague's Truck Troubles and Tumbled Glass!",

@@ -1,5 +1,165 @@
 [
   {
+    "date": "2024-09-05",
+    "thanks": "Thank you Harmony!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Ripped and Ruined: Orano Truck's Cover Gets a Not-So-Subtle Adjustment at Montague",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-09-05.jpeg",
+    "thumb": "/images/thumbs/2024-09-05.jpeg",
+    "date_year": 2024,
+    "date_week": 36,
+    "date_aus_string": "05/09/2024"
+  },
+  {
+    "date": "2024-07-23",
+    "thanks": "Thank you Angharad!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Udder Chaos: Livestock Truck Hits Montague, Cows Hit the Town",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-07-23.jpeg",
+    "thumb": "/images/thumbs/2024-07-23.jpeg",
+    "date_year": 2024,
+    "date_week": 30,
+    "date_aus_string": "18/04/2024"
+  },
+  {
+    "date": "2024-05-23",
+    "thanks": "Thank you Fabian!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Short Truck, Tall Problem: The Tailpipe That Thought It Could",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-05-23.jpeg",
+    "thumb": "/images/thumbs/2024-05-23.jpeg",
+    "date_year": 2024,
+    "date_week": 21,
+    "date_aus_string": "18/04/2024"
+  },
+  {
+    "date": "2024-05-23",
+    "thanks": "Thank you Fabian!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Too Tall, Too Tough: Montague’s Bridge Meets an Overconfident Transit Van",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-05-23.png",
+    "thumb": "/images/thumbs/2024-05-23.png",
+    "date_year": 2024,
+    "date_week": 21,
+    "date_aus_string": "18/04/2024"
+  },
+  {
+    "date": "2024-04-18",
+    "thanks": "Thank you Daniel!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Montague’s Bridge Blunder: White Digger Aims High, Hits Low",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-04-18.png",
+    "thumb": "/images/thumbs/2024-04-18.png",
+    "date_year": 2024,
+    "date_week": 16,
+    "date_aus_string": "18/04/2024"
+  },
+  {
+    "date": "2024-03-07",
+    "thanks": "Thank you Eamon, Matthew, Nick, Michael, Tipoff, George and Rhys!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Leaning Legend of Montague: The Italicized Incident of the Inclined Intruder",
+        "url": "https://www.reddit.com/r/melbourne/s/LtBjqvRUi2"
+      }
+    ],
+    "image": "/images/2024-03-07.png",
+    "thumb": "/images/thumbs/2024-03-07.png",
+    "date_year": 2024,
+    "date_week": 10,
+    "date_aus_string": "07/03/2024"
+  },
+  {
+    "date": "2024-07-23",
+    "thanks": "Thank you Angharad!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Udder Chaos: Livestock Truck Hits Montague, Cows Hit the Town",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-07-23.jpeg",
+    "thumb": "/images/thumbs/2024-07-23.jpeg",
+    "date_year": 2024,
+    "date_week": 30,
+    "date_aus_string": "18/04/2024"
+  },
+  {
+    "date": "2024-05-23",
+    "thanks": "Thank you Fabian!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Short Truck, Tall Problem: The Tailpipe That Thought It Could",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-05-23.jpeg",
+    "thumb": "/images/thumbs/2024-05-23.jpeg",
+    "date_year": 2024,
+    "date_week": 21,
+    "date_aus_string": "18/04/2024"
+  },
+  {
+    "date": "2024-05-23",
+    "thanks": "Thank you Fabian!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Too Tall, Too Tough: Montague’s Bridge Meets an Overconfident Transit Van",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-05-23.png",
+    "thumb": "/images/thumbs/2024-05-23.png",
+    "date_year": 2024,
+    "date_week": 21,
+    "date_aus_string": "18/04/2024"
+  },
+  {
+    "date": "2024-04-18",
+    "thanks": "Thank you Daniel!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Montague’s Bridge Blunder: White Digger Aims High, Hits Low",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-04-18.png",
+    "thumb": "/images/thumbs/2024-04-18.png",
+    "date_year": 2024,
+    "date_week": 16,
+    "date_aus_string": "18/04/2024"
+  },
+  {
     "date": "2024-03-07",
     "thanks": "Thank you Eamon, Matthew, Nick, Michael, Tipoff, George and Rhys!",
     "streak": 1,
@@ -89,8 +249,8 @@
         "url": "https://howmanydayssincemontaguestreetbridgehasbeenhit.com/"
       }
     ],
-    "image": "/images/2023-12-19.webm",
-    "thumb": "/images/thumbs/2023-12-19.webm",
+    "image": "/images/2023-12-19.jpg",
+    "thumb": "/images/thumbs/2023-12-19.jpg",
     "date_year": 2023,
     "date_week": 51,
     "date_aus_string": "19/12/2023"
@@ -389,7 +549,7 @@
     "streak": 27,
     "chumps": [
       {
-        "name": "Cement Mixer unable to cure Monty!",
+        "name": "Budget.. Direct Straight into Monty!",
         "url": "https://www.facebook.com/montylimbo/posts/1938812809636199"
       }
     ],
@@ -505,8 +665,8 @@
         "url": "https://archive.ph/gJvf2"
       }
     ],
-    "image": "/images/2021-11-08.gif",
-    "thumb": "/images/thumbs/2021-11-08.jpg",
+    "image": "/images/2021-12-08.jpg",
+    "thumb": "/images/thumbs/2021-12-08.jpg",
     "date_year": 2021,
     "date_week": 49,
     "date_aus_string": "08/12/2021"

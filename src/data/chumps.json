@@ -1,8 +1,88 @@
 [
   {
+    "date": "2024-09-05",
+    "thanks": "Thank you Harmony!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Ripped and Ruined: Orano Truck's Cover Gets a Not-So-Subtle Adjustment at Montague",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-09-05.png",
+    "thumb": "/images/thumbs/2024-09-05.png",
+    "date_year": 2024,
+    "date_week": 36,
+    "date_aus_string": "05/09/2024"
+  },
+  {
+    "date": "2024-07-23",
+    "thanks": "Thank you Angharad!",
+    "streak": 44,
+    "chumps": [
+      {
+        "name": "Udder Chaos: Livestock Truck Hits Montague, Cows Hit the Town",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-07-23.png",
+    "thumb": "/images/thumbs/2024-07-23.png",
+    "date_year": 2024,
+    "date_week": 30,
+    "date_aus_string": "23/07/2024"
+  },
+  {
+    "date": "2024-06-06",
+    "thanks": "Thank you Fabian!",
+    "streak": 47,
+    "chumps": [
+      {
+        "name": "Short Truck, Tall Problem: The Tailpipe That Thought It Could",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-06-06.png",
+    "thumb": "/images/thumbs/2024-06-06.png",
+    "date_year": 2024,
+    "date_week": 23,
+    "date_aus_string": "06/06/2024"
+  },
+  {
+    "date": "2024-05-23",
+    "thanks": "Thank you Fabian!",
+    "streak": 14,
+    "chumps": [
+      {
+        "name": "Too Tall, Too Tough: Montague\u2019s Bridge Meets an Overconfident Transit Van",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-05-23.jpeg",
+    "thumb": "/images/thumbs/2024-05-23.jpeg",
+    "date_year": 2024,
+    "date_week": 21,
+    "date_aus_string": "23/05/2024"
+  },
+  {
+    "date": "2024-04-18",
+    "thanks": "Thank you Daniel!",
+    "streak": 35,
+    "chumps": [
+      {
+        "name": "Montague\u2019s Bridge Blunder: White Digger Aims High, Hits Low",
+        "url": "/"
+      }
+    ],
+    "image": "/images/2024-04-18.png",
+    "thumb": "/images/thumbs/2024-04-18.png",
+    "date_year": 2024,
+    "date_week": 16,
+    "date_aus_string": "18/04/2024"
+  },
+  {
     "date": "2024-03-07",
     "thanks": "Thank you Eamon, Matthew, Nick, Michael, Tipoff, George and Rhys!",
-    "streak": 1,
+    "streak": 42,
     "chumps": [
       {
         "name": "Leaning Legend of Montague: The Italicized Incident of the Inclined Intruder",

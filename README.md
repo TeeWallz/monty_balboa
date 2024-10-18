@@ -25,5 +25,6 @@ https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 
 ## New Chump
 
+- Update src/data/chumps.json
 - python ./scripts/chump_utils.py --recalc
 - python ./scripts/chump_utils.py --new

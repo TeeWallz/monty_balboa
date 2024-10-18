@@ -1,8 +1,24 @@
 [
   {
+    "date": "2024-10-18",
+    "thanks": "Thank you David, Bill, Rhys, Jackson, Gregory and Dan!",
+    "streak": 1,
+    "chumps": [
+      {
+        "name": "Topless in Transit: Yokohama Truck Gets a Free Roof Reduction",
+        "url": "https://old.reddit.com/r/melbourne/comments/1g67qr9/monty_claims_another_victim/"
+      }
+    ],
+    "image": "/images/2024-10-18.png",
+    "thumb": "/images/thumbs/2024-10-18.png",
+    "date_year": 2024,
+    "date_week": 42,
+    "date_aus_string": "18/10/2024"
+  },
+  {
     "date": "2024-09-05",
     "thanks": "Thank you Harmony!",
-    "streak": 1,
+    "streak": 43,
     "chumps": [
       {
         "name": "Ripped and Ruined: Orano Truck's Cover Gets a Not-So-Subtle Adjustment at Montague",
@@ -16,25 +32,9 @@
     "date_aus_string": "05/09/2024"
   },
   {
-    "date": "2024-07-23",
-    "thanks": "Thank you Angharad!",
-    "streak": 44,
-    "chumps": [
-      {
-        "name": "Udder Chaos: Livestock Truck Hits Montague, Cows Hit the Town",
-        "url": "/"
-      }
-    ],
-    "image": "/images/2024-07-23.png",
-    "thumb": "/images/thumbs/2024-07-23.png",
-    "date_year": 2024,
-    "date_week": 30,
-    "date_aus_string": "23/07/2024"
-  },
-  {
     "date": "2024-06-06",
     "thanks": "Thank you Fabian!",
-    "streak": 47,
+    "streak": 91,
     "chumps": [
       {
         "name": "Short Truck, Tall Problem: The Tailpipe That Thought It Could",
